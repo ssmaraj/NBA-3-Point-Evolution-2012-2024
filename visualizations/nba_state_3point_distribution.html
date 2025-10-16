@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8bb9cad74367afb5a0e543f2bf18792c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8bb9cad74367afb5a0e543f2bf18792c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8bb9cad74367afb5a0e543f2bf18792c = L.map(
+                "map_8bb9cad74367afb5a0e543f2bf18792c",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1daff32989c1f5b2ecc0d93d09f3a41a = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1daff32989c1f5b2ecc0d93d09f3a41a.addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+            var circle_marker_9e4ca35b95178dbdf0b68583802f0eb9 = L.circleMarker(
+                [43.6435, -79.3791],
+                {"bubblingMouseEvents": true, "color": "#90ee90ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#90ee90ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.968707482993198, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_968aa4ce4a1ffdf5422db79f01985edd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4d1e649dee4e9c6a36e22f1aabf8720 = $(`<div id="html_d4d1e649dee4e9c6a36e22f1aabf8720" style="width: 100.0%; height: 100.0%;"><b>Ontario, Canada</b><br>Avg 3PA: 99.7<br>Avg 3P%: 28.13%</div>`)[0];
+                popup_968aa4ce4a1ffdf5422db79f01985edd.setContent(html_d4d1e649dee4e9c6a36e22f1aabf8720);
+            
+        
+
+        circle_marker_9e4ca35b95178dbdf0b68583802f0eb9.bindPopup(popup_968aa4ce4a1ffdf5422db79f01985edd)
+        ;
+
+        
+    
+    
+            var circle_marker_abee3cb278704d109a4bd33093b68508 = L.circleMarker(
+                [33.4458, -112.0712],
+                {"bubblingMouseEvents": true, "color": "#d3f939ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3f939ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.056521739130435, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_8349c6471e8c49f4bbf8c8e3bcfeb532 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac99aae20e497f9cb3614f3685757c03 = $(`<div id="html_ac99aae20e497f9cb3614f3685757c03" style="width: 100.0%; height: 100.0%;"><b>Arizona, United States of America</b><br>Avg 3PA: 110.6<br>Avg 3P%: 27.22%</div>`)[0];
+                popup_8349c6471e8c49f4bbf8c8e3bcfeb532.setContent(html_ac99aae20e497f9cb3614f3685757c03);
+            
+        
+
+        circle_marker_abee3cb278704d109a4bd33093b68508.bindPopup(popup_8349c6471e8c49f4bbf8c8e3bcfeb532)
+        ;
+
+        
+    
+    
+            var circle_marker_444c3186e315029f93f1e13b12ba750d = L.circleMarker(
+                [34.043, -118.2673],
+                {"bubblingMouseEvents": true, "color": "#d7f933ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d7f933ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.963750000000001, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_69588fbc826651f0cd8d6b37fc76906d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39d50d1217fbf8d996650612df857560 = $(`<div id="html_39d50d1217fbf8d996650612df857560" style="width: 100.0%; height: 100.0%;"><b>California, United States of America</b><br>Avg 3PA: 99.6<br>Avg 3P%: 27.16%</div>`)[0];
+                popup_69588fbc826651f0cd8d6b37fc76906d.setContent(html_39d50d1217fbf8d996650612df857560);
+            
+        
+
+        circle_marker_444c3186e315029f93f1e13b12ba750d.bindPopup(popup_69588fbc826651f0cd8d6b37fc76906d)
+        ;
+
+        
+    
+    
+            var circle_marker_5fd9539636cac48d3d00d7d684e80b23 = L.circleMarker(
+                [37.768, -122.3877],
+                {"bubblingMouseEvents": true, "color": "#fffa00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffa00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.26818181818182, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_ac7128837ac2dc4d191bd5b95d2da3fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d4b4d69ce6837ba0e959b4c7881726c = $(`<div id="html_8d4b4d69ce6837ba0e959b4c7881726c" style="width: 100.0%; height: 100.0%;"><b>California, United States of America</b><br>Avg 3PA: 112.7<br>Avg 3P%: 26.53%</div>`)[0];
+                popup_ac7128837ac2dc4d191bd5b95d2da3fe.setContent(html_8d4b4d69ce6837ba0e959b4c7881726c);
+            
+        
+
+        circle_marker_5fd9539636cac48d3d00d7d684e80b23.bindPopup(popup_ac7128837ac2dc4d191bd5b95d2da3fe)
+        ;
+
+        
+    
+    
+            var circle_marker_e23ac58cf0b03f2137c533fae5f23309 = L.circleMarker(
+                [38.5802, -121.4998],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.484574468085107, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_898b40aceeae5260339350156be2680f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5014b1731041efbcb10e0adebf0f9b86 = $(`<div id="html_5014b1731041efbcb10e0adebf0f9b86" style="width: 100.0%; height: 100.0%;"><b>California, United States of America</b><br>Avg 3PA: 124.8<br>Avg 3P%: 26.62%</div>`)[0];
+                popup_898b40aceeae5260339350156be2680f.setContent(html_5014b1731041efbcb10e0adebf0f9b86);
+            
+        
+
+        circle_marker_e23ac58cf0b03f2137c533fae5f23309.bindPopup(popup_898b40aceeae5260339350156be2680f)
+        ;
+
+        
+    
+    
+            var circle_marker_cc4f9890e65f320702b1b9b52c1beb0b = L.circleMarker(
+                [39.7487, -105.0077],
+                {"bubblingMouseEvents": true, "color": "#008000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.232958801498127, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_b33e1d8c1de6aff86ed7bf81ba1f3ba0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_682ff2412381f382981d84e2ab082da3 = $(`<div id="html_682ff2412381f382981d84e2ab082da3" style="width: 100.0%; height: 100.0%;"><b>Colorado, United States of America</b><br>Avg 3PA: 102.3<br>Avg 3P%: 29.63%</div>`)[0];
+                popup_b33e1d8c1de6aff86ed7bf81ba1f3ba0.setContent(html_682ff2412381f382981d84e2ab082da3);
+            
+        
+
+        circle_marker_cc4f9890e65f320702b1b9b52c1beb0b.bindPopup(popup_b33e1d8c1de6aff86ed7bf81ba1f3ba0)
+        ;
+
+        
+    
+    
+            var circle_marker_4ebb4afe1bc8890240fa62be393ab694 = L.circleMarker(
+                [38.8981, -77.0209],
+                {"bubblingMouseEvents": true, "color": "#ffa600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffa600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.208015267175572, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_c66ce9b808269ed0e49ab853203d66f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd093616907661dec318798a97e2c26b = $(`<div id="html_bd093616907661dec318798a97e2c26b" style="width: 100.0%; height: 100.0%;"><b>District of Columbia, United States of America</b><br>Avg 3PA: 92.1<br>Avg 3P%: 25.13%</div>`)[0];
+                popup_c66ce9b808269ed0e49ab853203d66f7.setContent(html_bd093616907661dec318798a97e2c26b);
+            
+        
+
+        circle_marker_4ebb4afe1bc8890240fa62be393ab694.bindPopup(popup_c66ce9b808269ed0e49ab853203d66f7)
+        ;
+
+        
+    
+    
+            var circle_marker_3068f447282daeeaeb2727cd070c6f1d = L.circleMarker(
+                [25.7814, -80.187],
+                {"bubblingMouseEvents": true, "color": "#8dec8dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8dec8dff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.786597938144329, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_3b3ad0239439f3f33916223117b7c709 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d397e8f8fcb9c5071608c1a0dbaa0ef1 = $(`<div id="html_d397e8f8fcb9c5071608c1a0dbaa0ef1" style="width: 100.0%; height: 100.0%;"><b>Florida, United States of America</b><br>Avg 3PA: 97.9<br>Avg 3P%: 28.16%</div>`)[0];
+                popup_3b3ad0239439f3f33916223117b7c709.setContent(html_d397e8f8fcb9c5071608c1a0dbaa0ef1);
+            
+        
+
+        circle_marker_3068f447282daeeaeb2727cd070c6f1d.bindPopup(popup_3b3ad0239439f3f33916223117b7c709)
+        ;
+
+        
+    
+    
+            var circle_marker_9ddfb943cf97567a9b2ed872b656e122 = L.circleMarker(
+                [28.5392, -81.3839],
+                {"bubblingMouseEvents": true, "color": "#0f8c0fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0f8c0fff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.335526315789474, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_402dfcc5685df2f57fb37df8b2ed9055 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bdda1bf42fd0741407e45bd51f3fa257 = $(`<div id="html_bdda1bf42fd0741407e45bd51f3fa257" style="width: 100.0%; height: 100.0%;"><b>Florida, United States of America</b><br>Avg 3PA: 103.4<br>Avg 3P%: 29.47%</div>`)[0];
+                popup_402dfcc5685df2f57fb37df8b2ed9055.setContent(html_bdda1bf42fd0741407e45bd51f3fa257);
+            
+        
+
+        circle_marker_9ddfb943cf97567a9b2ed872b656e122.bindPopup(popup_402dfcc5685df2f57fb37df8b2ed9055)
+        ;
+
+        
+    
+    
+            var circle_marker_0b3c032e2f74a4dd5392516df4c5c343 = L.circleMarker(
+                [33.7573, -84.3963],
+                {"bubblingMouseEvents": true, "color": "#abf36dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#abf36dff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.941052631578946, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_2fcd4506cdfce19f54665cec1f51cdda = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d9713a3845e34c70d6850ef223cf2b2 = $(`<div id="html_0d9713a3845e34c70d6850ef223cf2b2" style="width: 100.0%; height: 100.0%;"><b>Georgia, United States of America</b><br>Avg 3PA: 99.4<br>Avg 3P%: 27.77%</div>`)[0];
+                popup_2fcd4506cdfce19f54665cec1f51cdda.setContent(html_0d9713a3845e34c70d6850ef223cf2b2);
+            
+        
+
+        circle_marker_0b3c032e2f74a4dd5392516df4c5c343.bindPopup(popup_2fcd4506cdfce19f54665cec1f51cdda)
+        ;
+
+        
+    
+    
+            var circle_marker_bdac9c7c0921611cafed1386200dce88 = L.circleMarker(
+                [41.8807, -87.6742],
+                {"bubblingMouseEvents": true, "color": "#ffd400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.464372469635627, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_d96087b1934e5681e9f0120d9ddffa74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b78db77628dc371b1a49220ba59d563 = $(`<div id="html_5b78db77628dc371b1a49220ba59d563" style="width: 100.0%; height: 100.0%;"><b>Illinois, United States of America</b><br>Avg 3PA: 94.6<br>Avg 3P%: 25.90%</div>`)[0];
+                popup_d96087b1934e5681e9f0120d9ddffa74.setContent(html_5b78db77628dc371b1a49220ba59d563);
+            
+        
+
+        circle_marker_bdac9c7c0921611cafed1386200dce88.bindPopup(popup_d96087b1934e5681e9f0120d9ddffa74)
+        ;
+
+        
+    
+    
+            var circle_marker_6be7b78b8c3e46ed69796e457ab8e6e7 = L.circleMarker(
+                [39.7639, -86.1555],
+                {"bubblingMouseEvents": true, "color": "#ffdd00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdd00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.883333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_0ae8c7068c609fb541febc6297cd0832 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38bc0978642da6445de00dde3c2674c8 = $(`<div id="html_38bc0978642da6445de00dde3c2674c8" style="width: 100.0%; height: 100.0%;"><b>Indiana, United States of America</b><br>Avg 3PA: 88.8<br>Avg 3P%: 26.05%</div>`)[0];
+                popup_0ae8c7068c609fb541febc6297cd0832.setContent(html_38bc0978642da6445de00dde3c2674c8);
+            
+        
+
+        circle_marker_6be7b78b8c3e46ed69796e457ab8e6e7.bindPopup(popup_0ae8c7068c609fb541febc6297cd0832)
+        ;
+
+        
+    
+    
+            var circle_marker_db99ccc3a5945d53b49a3e3e7def639e = L.circleMarker(
+                [29.949, -90.0821],
+                {"bubblingMouseEvents": true, "color": "#faff06ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#faff06ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.830044843049327, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_6e28b02b7763da61cc4780ffacf23858 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_100138736a47a9d5081ac09da9f84b26 = $(`<div id="html_100138736a47a9d5081ac09da9f84b26" style="width: 100.0%; height: 100.0%;"><b>Louisiana, United States of America</b><br>Avg 3PA: 98.3<br>Avg 3P%: 26.69%</div>`)[0];
+                popup_6e28b02b7763da61cc4780ffacf23858.setContent(html_100138736a47a9d5081ac09da9f84b26);
+            
+        
+
+        circle_marker_db99ccc3a5945d53b49a3e3e7def639e.bindPopup(popup_6e28b02b7763da61cc4780ffacf23858)
+        ;
+
+        
+    
+    
+            var circle_marker_c6b0a9f4fded15984956e4ccd2ae0c5b = L.circleMarker(
+                [42.3663, -71.0621],
+                {"bubblingMouseEvents": true, "color": "#97ef87ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#97ef87ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.534756097560976, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_4476528b3777917a7560c5e8168c1883 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7780cf24b5fb9e47dbdaf2bc99503d29 = $(`<div id="html_7780cf24b5fb9e47dbdaf2bc99503d29" style="width: 100.0%; height: 100.0%;"><b>Massachusetts, United States of America</b><br>Avg 3PA: 95.3<br>Avg 3P%: 28.04%</div>`)[0];
+                popup_4476528b3777917a7560c5e8168c1883.setContent(html_7780cf24b5fb9e47dbdaf2bc99503d29);
+            
+        
+
+        circle_marker_c6b0a9f4fded15984956e4ccd2ae0c5b.bindPopup(popup_4476528b3777917a7560c5e8168c1883)
+        ;
+
+        
+    
+    
+            var circle_marker_642ac9c5e0892a85669898fe4d5232ea = L.circleMarker(
+                [42.6978, -83.2407],
+                {"bubblingMouseEvents": true, "color": "#bef554ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bef554ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.909767441860465, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_a25e51b6a50abaaacdda6bd266813207 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bff3e515415922a4397422d10d538f49 = $(`<div id="html_bff3e515415922a4397422d10d538f49" style="width: 100.0%; height: 100.0%;"><b>Michigan, United States of America</b><br>Avg 3PA: 109.1<br>Avg 3P%: 27.51%</div>`)[0];
+                popup_a25e51b6a50abaaacdda6bd266813207.setContent(html_bff3e515415922a4397422d10d538f49);
+            
+        
+
+        circle_marker_642ac9c5e0892a85669898fe4d5232ea.bindPopup(popup_a25e51b6a50abaaacdda6bd266813207)
+        ;
+
+        
+    
+    
+            var circle_marker_727c5bb87b16cc62814a2e3d3b33f7c5 = L.circleMarker(
+                [44.9795, -93.276],
+                {"bubblingMouseEvents": true, "color": "#adf36aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#adf36aff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.491928251121077, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_48e24f974532a3414228b55dc6cbb738 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9575ec1204f65a2bfb075e9e2e226fd9 = $(`<div id="html_9575ec1204f65a2bfb075e9e2e226fd9" style="width: 100.0%; height: 100.0%;"><b>Minnesota, United States of America</b><br>Avg 3PA: 104.9<br>Avg 3P%: 27.73%</div>`)[0];
+                popup_48e24f974532a3414228b55dc6cbb738.setContent(html_9575ec1204f65a2bfb075e9e2e226fd9);
+            
+        
+
+        circle_marker_727c5bb87b16cc62814a2e3d3b33f7c5.bindPopup(popup_48e24f974532a3414228b55dc6cbb738)
+        ;
+
+        
+    
+    
+            var circle_marker_1568c3946a25c33000dc2338127b908d = L.circleMarker(
+                [40.6826, -73.9754],
+                {"bubblingMouseEvents": true, "color": "#f6fe0bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6fe0bff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.43745704467354, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_d374281ca7a3df30f37a2f91395c496b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a9bc8e86d523d12489dc52df9ebfbb1 = $(`<div id="html_2a9bc8e86d523d12489dc52df9ebfbb1" style="width: 100.0%; height: 100.0%;"><b>New York, United States of America</b><br>Avg 3PA: 94.4<br>Avg 3P%: 26.75%</div>`)[0];
+                popup_d374281ca7a3df30f37a2f91395c496b.setContent(html_2a9bc8e86d523d12489dc52df9ebfbb1);
+            
+        
+
+        circle_marker_1568c3946a25c33000dc2338127b908d.bindPopup(popup_d374281ca7a3df30f37a2f91395c496b)
+        ;
+
+        
+    
+    
+            var circle_marker_f71025ef063ec37bb8d178d70e880105 = L.circleMarker(
+                [40.7505, -73.9934],
+                {"bubblingMouseEvents": true, "color": "#ffd800ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.706140350877194, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_e507a678c8dbd45c2198c9271fd19ca3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ab433066417b8f878053d13b42aacf2 = $(`<div id="html_7ab433066417b8f878053d13b42aacf2" style="width: 100.0%; height: 100.0%;"><b>New York, United States of America</b><br>Avg 3PA: 107.1<br>Avg 3P%: 25.97%</div>`)[0];
+                popup_e507a678c8dbd45c2198c9271fd19ca3.setContent(html_7ab433066417b8f878053d13b42aacf2);
+            
+        
+
+        circle_marker_f71025ef063ec37bb8d178d70e880105.bindPopup(popup_e507a678c8dbd45c2198c9271fd19ca3)
+        ;
+
+        
+    
+    
+            var circle_marker_8fcbe15c901c0c2ae42a94306fcdf440 = L.circleMarker(
+                [35.2251, -80.8392],
+                {"bubblingMouseEvents": true, "color": "#d0f83dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0f83dff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.12548076923077, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_581f4c6f0bf25a7386ce7bcda751b368 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_faa1517b965184677d8fdc01c5ea0ff5 = $(`<div id="html_faa1517b965184677d8fdc01c5ea0ff5" style="width: 100.0%; height: 100.0%;"><b>North Carolina, United States of America</b><br>Avg 3PA: 121.3<br>Avg 3P%: 27.27%</div>`)[0];
+                popup_581f4c6f0bf25a7386ce7bcda751b368.setContent(html_faa1517b965184677d8fdc01c5ea0ff5);
+            
+        
+
+        circle_marker_8fcbe15c901c0c2ae42a94306fcdf440.bindPopup(popup_581f4c6f0bf25a7386ce7bcda751b368)
+        ;
+
+        
+    
+    
+            var circle_marker_ba66c305f62a06c88c2fa6f98d76b37a = L.circleMarker(
+                [41.4965, -81.6882],
+                {"bubblingMouseEvents": true, "color": "#f8fe09ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f8fe09ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.531481481481482, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_a3b5bde6cc85f504318a90a3ed65b96b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf8d0f4df27de2283e18ed8b13899efe = $(`<div id="html_cf8d0f4df27de2283e18ed8b13899efe" style="width: 100.0%; height: 100.0%;"><b>Ohio, United States of America</b><br>Avg 3PA: 105.3<br>Avg 3P%: 26.72%</div>`)[0];
+                popup_a3b5bde6cc85f504318a90a3ed65b96b.setContent(html_cf8d0f4df27de2283e18ed8b13899efe);
+            
+        
+
+        circle_marker_ba66c305f62a06c88c2fa6f98d76b37a.bindPopup(popup_a3b5bde6cc85f504318a90a3ed65b96b)
+        ;
+
+        
+    
+    
+            var circle_marker_6d1de80dd1b83ad05666095ab0d2f66a = L.circleMarker(
+                [35.4634, -97.5151],
+                {"bubblingMouseEvents": true, "color": "#ffe600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.498983050847459, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_2fb035920fc912094a793b71bdd19a7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0b0b592d9579f084f7f686182182e1c = $(`<div id="html_d0b0b592d9579f084f7f686182182e1c" style="width: 100.0%; height: 100.0%;"><b>Oklahoma, United States of America</b><br>Avg 3PA: 95.0<br>Avg 3P%: 26.20%</div>`)[0];
+                popup_2fb035920fc912094a793b71bdd19a7f.setContent(html_d0b0b592d9579f084f7f686182182e1c);
+            
+        
+
+        circle_marker_6d1de80dd1b83ad05666095ab0d2f66a.bindPopup(popup_2fb035920fc912094a793b71bdd19a7f)
+        ;
+
+        
+    
+    
+            var circle_marker_fa8eac5dc9561ed80f18a0775b4719c4 = L.circleMarker(
+                [45.5316, -122.6668],
+                {"bubblingMouseEvents": true, "color": "#98f085ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98f085ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.981314878892734, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_228f42cffd2b6dfd757e601b002588af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec258e48c44c1c5d40c7b75c83340326 = $(`<div id="html_ec258e48c44c1c5d40c7b75c83340326" style="width: 100.0%; height: 100.0%;"><b>Oregon, United States of America</b><br>Avg 3PA: 99.8<br>Avg 3P%: 28.02%</div>`)[0];
+                popup_228f42cffd2b6dfd757e601b002588af.setContent(html_ec258e48c44c1c5d40c7b75c83340326);
+            
+        
+
+        circle_marker_fa8eac5dc9561ed80f18a0775b4719c4.bindPopup(popup_228f42cffd2b6dfd757e601b002588af)
+        ;
+
+        
+    
+    
+            var circle_marker_65cddb6e429e27f87b34b94526736fe5 = L.circleMarker(
+                [39.9012, -75.172],
+                {"bubblingMouseEvents": true, "color": "#f7fe0bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f7fe0bff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.641007194244605, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_41eee16b7ec9055d2c19319f562d309c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e55a08fa5e0a20ba13e377d209742c0a = $(`<div id="html_e55a08fa5e0a20ba13e377d209742c0a" style="width: 100.0%; height: 100.0%;"><b>Pennsylvania, United States of America</b><br>Avg 3PA: 96.4<br>Avg 3P%: 26.74%</div>`)[0];
+                popup_41eee16b7ec9055d2c19319f562d309c.setContent(html_e55a08fa5e0a20ba13e377d209742c0a);
+            
+        
+
+        circle_marker_65cddb6e429e27f87b34b94526736fe5.bindPopup(popup_41eee16b7ec9055d2c19319f562d309c)
+        ;
+
+        
+    
+    
+            var circle_marker_d7c7dd810162086e7320886935959838 = L.circleMarker(
+                [35.1383, -90.0505],
+                {"bubblingMouseEvents": true, "color": "#ffa500ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffa500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.65864406779661, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_92f176aad7fd2d901d25cb36bf755409 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_34819d7d5332f1291fdc91a1a0af6e21 = $(`<div id="html_34819d7d5332f1291fdc91a1a0af6e21" style="width: 100.0%; height: 100.0%;"><b>Tennessee, United States of America</b><br>Avg 3PA: 76.6<br>Avg 3P%: 25.12%</div>`)[0];
+                popup_92f176aad7fd2d901d25cb36bf755409.setContent(html_34819d7d5332f1291fdc91a1a0af6e21);
+            
+        
+
+        circle_marker_d7c7dd810162086e7320886935959838.bindPopup(popup_92f176aad7fd2d901d25cb36bf755409)
+        ;
+
+        
+    
+    
+            var circle_marker_a3f40e5e2076b23bb93b81f66b7394c6 = L.circleMarker(
+                [29.4269, -98.4375],
+                {"bubblingMouseEvents": true, "color": "#41b241ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41b241ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.513475177304965, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_cc46dcebb37eefaed56d69d90e4c63a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c731ab2eabc78ab26d0c9af153098ea = $(`<div id="html_0c731ab2eabc78ab26d0c9af153098ea" style="width: 100.0%; height: 100.0%;"><b>Texas, United States of America</b><br>Avg 3PA: 85.1<br>Avg 3P%: 28.95%</div>`)[0];
+                popup_cc46dcebb37eefaed56d69d90e4c63a5.setContent(html_0c731ab2eabc78ab26d0c9af153098ea);
+            
+        
+
+        circle_marker_a3f40e5e2076b23bb93b81f66b7394c6.bindPopup(popup_cc46dcebb37eefaed56d69d90e4c63a5)
+        ;
+
+        
+    
+    
+            var circle_marker_6143779ed6c97b20fbb900c986999abc = L.circleMarker(
+                [29.7508, -95.3621],
+                {"bubblingMouseEvents": true, "color": "#ffca00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffca00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.99041095890411, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_4b2fffd518eb0273487772f22fb7774b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b046ae74d6e0b416a14f140604146ca8 = $(`<div id="html_b046ae74d6e0b416a14f140604146ca8" style="width: 100.0%; height: 100.0%;"><b>Texas, United States of America</b><br>Avg 3PA: 119.9<br>Avg 3P%: 25.73%</div>`)[0];
+                popup_4b2fffd518eb0273487772f22fb7774b.setContent(html_b046ae74d6e0b416a14f140604146ca8);
+            
+        
+
+        circle_marker_6143779ed6c97b20fbb900c986999abc.bindPopup(popup_4b2fffd518eb0273487772f22fb7774b)
+        ;
+
+        
+    
+    
+            var circle_marker_29e74bb3424819772da7b65d2cf2e76b = L.circleMarker(
+                [32.7905, -96.8104],
+                {"bubblingMouseEvents": true, "color": "#ffeb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.23973063973064, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_436a80157255bdd209382b83ab08a386 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_577e5683f84eab81de9c1ae65a527329 = $(`<div id="html_577e5683f84eab81de9c1ae65a527329" style="width: 100.0%; height: 100.0%;"><b>Texas, United States of America</b><br>Avg 3PA: 102.4<br>Avg 3P%: 26.27%</div>`)[0];
+                popup_436a80157255bdd209382b83ab08a386.setContent(html_577e5683f84eab81de9c1ae65a527329);
+            
+        
+
+        circle_marker_29e74bb3424819772da7b65d2cf2e76b.bindPopup(popup_436a80157255bdd209382b83ab08a386)
+        ;
+
+        
+    
+    
+            var circle_marker_634122df516b18c439b63e29c05fb92d = L.circleMarker(
+                [40.7683, -111.9011],
+                {"bubblingMouseEvents": true, "color": "#ffcb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.950735294117646, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_fb1cd5d0db10af5e186a17c7fcb35ca7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50ead2da54efbb0ad7a66279fdf16bf2 = $(`<div id="html_50ead2da54efbb0ad7a66279fdf16bf2" style="width: 100.0%; height: 100.0%;"><b>Utah, United States of America</b><br>Avg 3PA: 99.5<br>Avg 3P%: 25.75%</div>`)[0];
+                popup_fb1cd5d0db10af5e186a17c7fcb35ca7.setContent(html_50ead2da54efbb0ad7a66279fdf16bf2);
+            
+        
+
+        circle_marker_634122df516b18c439b63e29c05fb92d.bindPopup(popup_fb1cd5d0db10af5e186a17c7fcb35ca7)
+        ;
+
+        
+    
+    
+            var circle_marker_8b792d3622fe66f4d7df776db211cd92 = L.circleMarker(
+                [43.0436, -87.9054],
+                {"bubblingMouseEvents": true, "color": "#aef36aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aef36aff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.880757097791797, "stroke": true, "weight": 3}
+            ).addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+        var popup_dfb684f5c1c41808a0df4461a409c9f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a057c055e8c3d91bdd1dbfc812d31698 = $(`<div id="html_a057c055e8c3d91bdd1dbfc812d31698" style="width: 100.0%; height: 100.0%;"><b>Wisconsin, United States of America</b><br>Avg 3PA: 88.8<br>Avg 3P%: 27.73%</div>`)[0];
+                popup_dfb684f5c1c41808a0df4461a409c9f8.setContent(html_a057c055e8c3d91bdd1dbfc812d31698);
+            
+        
+
+        circle_marker_8b792d3622fe66f4d7df776db211cd92.bindPopup(popup_dfb684f5c1c41808a0df4461a409c9f8)
+        ;
+
+        
+    
+    
+    var color_map_dd7b9767fa6abf02701fd02541417bc4 = {};
+
+    
+    color_map_dd7b9767fa6abf02701fd02541417bc4.color = d3.scale.threshold()
+              .domain([0.2511627118644068, 0.25125326417451166, 0.25134381648461657, 0.2514343687947214, 0.2515249211048263, 0.2516154734149312, 0.2517060257250361, 0.25179657803514094, 0.25188713034524585, 0.2519776826553507, 0.2520682349654556, 0.25215878727556046, 0.25224933958566537, 0.2523398918957702, 0.2524304442058751, 0.25252099651598, 0.2526115488260849, 0.25270210113618974, 0.25279265344629465, 0.2528832057563995, 0.2529737580665044, 0.25306431037660926, 0.25315486268671417, 0.253245414996819, 0.2533359673069239, 0.2534265196170288, 0.2535170719271337, 0.25360762423723854, 0.25369817654734345, 0.2537887288574483, 0.2538792811675532, 0.25396983347765806, 0.25406038578776297, 0.2541509380978678, 0.2542414904079727, 0.2543320427180776, 0.2544225950281825, 0.25451314733828734, 0.25460369964839225, 0.2546942519584971, 0.25478480426860195, 0.25487535657870686, 0.2549659088888117, 0.2550564611989166, 0.25514701350902147, 0.2552375658191264, 0.25532811812923123, 0.25541867043933614, 0.255509222749441, 0.2555997750595459, 0.25569032736965075, 0.25578087967975566, 0.2558714319898605, 0.2559619842999654, 0.25605253661007027, 0.2561430889201752, 0.25623364123028003, 0.25632419354038494, 0.2564147458504898, 0.2565052981605947, 0.25659585047069955, 0.25668640278080446, 0.2567769550909093, 0.2568675074010142, 0.25695805971111907, 0.257048612021224, 0.25713916433132883, 0.25722971664143374, 0.2573202689515386, 0.2574108212616435, 0.25750137357174835, 0.25759192588185326, 0.2576824781919581, 0.257773030502063, 0.25786358281216787, 0.2579541351222728, 0.25804468743237763, 0.25813523974248254, 0.2582257920525874, 0.25831634436269224, 0.25840689667279715, 0.258497448982902, 0.2585880012930069, 0.25867855360311176, 0.25876910591321667, 0.2588596582233215, 0.25895021053342643, 0.2590407628435313, 0.2591313151536362, 0.25922186746374104, 0.25931241977384595, 0.2594029720839508, 0.2594935243940557, 0.25958407670416056, 0.25967462901426547, 0.2597651813243703, 0.25985573363447523, 0.2599462859445801, 0.260036838254685, 0.26012739056478984, 0.26021794287489475, 0.2603084951849996, 0.2603990474951045, 0.26048959980520936, 0.26058015211531427, 0.2606707044254191, 0.260761256735524, 0.2608518090456289, 0.2609423613557338, 0.26103291366583864, 0.26112346597594355, 0.2612140182860484, 0.2613045705961533, 0.26139512290625816, 0.261485675216363, 0.2615762275264679, 0.2616667798365728, 0.2617573321466777, 0.26184788445678253, 0.26193843676688744, 0.2620289890769923, 0.2621195413870972, 0.26221009369720205, 0.26230064600730696, 0.2623911983174118, 0.2624817506275167, 0.26257230293762157, 0.2626628552477265, 0.26275340755783133, 0.26284395986793624, 0.2629345121780411, 0.263025064488146, 0.26311561679825085, 0.26320616910835576, 0.2632967214184606, 0.2633872737285655, 0.26347782603867037, 0.2635683783487753, 0.26365893065888013, 0.26374948296898504, 0.2638400352790899, 0.2639305875891948, 0.26402113989929965, 0.26411169220940456, 0.2642022445195094, 0.2642927968296143, 0.26438334913971917, 0.2644739014498241, 0.26456445375992893, 0.26465500607003384, 0.2647455583801387, 0.2648361106902436, 0.26492666300034845, 0.2650172153104533, 0.2651077676205582, 0.2651983199306631, 0.26528887224076797, 0.2653794245508728, 0.26546997686097773, 0.2655605291710826, 0.2656510814811875, 0.26574163379129234, 0.26583218610139725, 0.2659227384115021, 0.266013290721607, 0.26610384303171186, 0.26619439534181677, 0.2662849476519216, 0.26637549996202653, 0.2664660522721314, 0.2665566045822363, 0.26664715689234114, 0.26673770920244605, 0.2668282615125509, 0.2669188138226558, 0.26700936613276066, 0.26709991844286557, 0.2671904707529704, 0.26728102306307533, 0.2673715753731802, 0.2674621276832851, 0.26755267999338994, 0.26764323230349485, 0.2677337846135997, 0.2678243369237046, 0.26791488923380946, 0.26800544154391437, 0.2680959938540192, 0.26818654616412413, 0.268277098474229, 0.2683676507843339, 0.26845820309443874, 0.2685487554045436, 0.2686393077146485, 0.26872986002475335, 0.26882041233485826, 0.2689109646449631, 0.269001516955068, 0.2690920692651729, 0.2691826215752778, 0.26927317388538263, 0.26936372619548754, 0.2694542785055924, 0.2695448308156973, 0.26963538312580215, 0.26972593543590706, 0.2698164877460119, 0.2699070400561168, 0.2699975923662217, 0.2700881446763266, 0.27017869698643143, 0.27026924929653634, 0.2703598016066412, 0.2704503539167461, 0.27054090622685095, 0.27063145853695586, 0.2707220108470607, 0.2708125631571656, 0.27090311546727047, 0.2709936677773754, 0.27108422008748023, 0.27117477239758514, 0.27126532470769, 0.2713558770177949, 0.27144642932789975, 0.27153698163800466, 0.2716275339481095, 0.2717180862582144, 0.27180863856831927, 0.2718991908784242, 0.27198974318852903, 0.2720802954986339, 0.2721708478087388, 0.27226140011884364, 0.27235195242894855, 0.2724425047390534, 0.2725330570491583, 0.27262360935926316, 0.27271416166936807, 0.2728047139794729, 0.27289526628957783, 0.2729858185996827, 0.2730763709097876, 0.27316692321989244, 0.27325747552999735, 0.2733480278401022, 0.2734385801502071, 0.27352913246031196, 0.27361968477041687, 0.2737102370805217, 0.27380078939062663, 0.2738913417007315, 0.2739818940108364, 0.27407244632094124, 0.27416299863104615, 0.274253550941151, 0.2743441032512559, 0.27443465556136076, 0.27452520787146567, 0.2746157601815705, 0.27470631249167543, 0.2747968648017803, 0.2748874171118852, 0.27497796942199004, 0.27506852173209495, 0.2751590740421998, 0.27524962635230465, 0.27534017866240956, 0.27543073097251447, 0.2755212832826193, 0.2756118355927242, 0.2757023879028291, 0.27579294021293393, 0.27588349252303884, 0.2759740448331437, 0.2760645971432486, 0.27615514945335345, 0.27624570176345836, 0.2763362540735632, 0.2764268063836681, 0.276517358693773, 0.2766079110038779, 0.27669846331398273, 0.27678901562408764, 0.2768795679341925, 0.2769701202442974, 0.27706067255440225, 0.27715122486450716, 0.277241777174612, 0.2773323294847169, 0.2774228817948218, 0.2775134341049267, 0.27760398641503153, 0.27769453872513644, 0.2777850910352413, 0.2778756433453462, 0.27796619565545105, 0.27805674796555596, 0.2781473002756608, 0.2782378525857657, 0.2783284048958706, 0.2784189572059755, 0.27850950951608033, 0.27860006182618524, 0.2786906141362901, 0.27878116644639495, 0.27887171875649985, 0.27896227106660476, 0.2790528233767096, 0.27914337568681447, 0.2792339279969194, 0.2793244803070242, 0.27941503261712913, 0.279505584927234, 0.2795961372373389, 0.27968668954744375, 0.27977724185754865, 0.2798677941676535, 0.2799583464777584, 0.28004889878786327, 0.2801394510979682, 0.280230003408073, 0.28032055571817793, 0.2804111080282828, 0.2805016603383877, 0.28059221264849254, 0.28068276495859745, 0.2807733172687023, 0.2808638695788072, 0.28095442188891206, 0.281044974199017, 0.2811355265091218, 0.28122607881922673, 0.2813166311293316, 0.2814071834394365, 0.28149773574954134, 0.28158828805964625, 0.2816788403697511, 0.281769392679856, 0.28185994498996086, 0.28195049730006577, 0.2820410496101706, 0.28213160192027553, 0.2822221542303804, 0.28231270654048524, 0.28240325885059014, 0.28249381116069505, 0.2825843634707999, 0.28267491578090476, 0.28276546809100966, 0.28285602040111457, 0.2829465727112194, 0.2830371250213243, 0.2831276773314292, 0.28321822964153404, 0.28330878195163894, 0.2833993342617438, 0.2834898865718487, 0.28358043888195356, 0.28367099119205846, 0.2837615435021633, 0.2838520958122682, 0.2839426481223731, 0.284033200432478, 0.28412375274258284, 0.28421430505268774, 0.2843048573627926, 0.2843954096728975, 0.28448596198300236, 0.28457651429310726, 0.2846670666032121, 0.284757618913317, 0.2848481712234219, 0.2849387235335268, 0.28502927584363164, 0.28511982815373654, 0.2852103804638414, 0.2853009327739463, 0.28539148508405116, 0.28548203739415606, 0.2855725897042609, 0.2856631420143658, 0.2857536943244707, 0.2858442466345755, 0.28593479894468044, 0.28602535125478534, 0.2861159035648902, 0.28620645587499505, 0.28629700818509995, 0.2863875604952048, 0.2864781128053097, 0.28656866511541457, 0.2866592174255195, 0.2867497697356243, 0.28684032204572923, 0.2869308743558341, 0.287021426665939, 0.28711197897604385, 0.28720253128614875, 0.2872930835962536, 0.2873836359063585, 0.28747418821646337, 0.2875647405265683, 0.2876552928366731, 0.28774584514677803, 0.2878363974568829, 0.2879269497669878, 0.28801750207709265, 0.28810805438719755, 0.2881986066973024, 0.2882891590074073, 0.28837971131751217, 0.2884702636276171, 0.2885608159377219, 0.28865136824782683, 0.2887419205579317, 0.2888324728680366, 0.28892302517814145, 0.2890135774882463, 0.2891041297983512, 0.2891946821084561, 0.28928523441856097, 0.2893757867286658, 0.2894663390387707, 0.28955689134887563, 0.2896474436589805, 0.28973799596908534, 0.28982854827919025, 0.28991910058929515, 0.2900096528994, 0.29010020520950486, 0.29019075751960977, 0.2902813098297146, 0.2903718621398195, 0.2904624144499244, 0.2905529667600293, 0.29064351907013414, 0.29073407138023905, 0.2908246236903439, 0.2909151760004488, 0.29100572831055366, 0.29109628062065857, 0.2911868329307634, 0.2912773852408683, 0.2913679375509732, 0.2914584898610781, 0.29154904217118294, 0.29163959448128784, 0.2917301467913927, 0.2918206991014976, 0.29191125141160246, 0.29200180372170736, 0.2920923560318122, 0.2921829083419171, 0.292273460652022, 0.2923640129621269, 0.29245456527223174, 0.29254511758233664, 0.2926356698924415, 0.2927262222025464, 0.29281677451265126, 0.2929073268227561, 0.292997879132861, 0.29308843144296587, 0.2931789837530708, 0.29326953606317563, 0.29336008837328054, 0.2934506406833854, 0.2935411929934903, 0.29363174530359515, 0.29372229761370006, 0.2938128499238049, 0.2939034022339098, 0.29399395454401467, 0.2940845068541196, 0.29417505916422443, 0.29426561147432934, 0.2943561637844342, 0.2944467160945391, 0.29453726840464395, 0.29462782071474886, 0.2947183730248537, 0.2948089253349586, 0.29489947764506347, 0.2949900299551684, 0.29508058226527323, 0.29517113457537814, 0.295261686885483, 0.2953522391955879, 0.29544279150569275, 0.29553334381579766, 0.2956238961259025, 0.2957144484360074, 0.29580500074611227, 0.2958955530562172, 0.295986105366322, 0.2960766576764269, 0.2961672099865318, 0.2962577622966367, 0.29634831460674155])
+              .range(['#ffa500ff', '#ffa600ff', '#ffa600ff', '#ffa700ff', '#ffa700ff', '#ffa800ff', '#ffa800ff', '#ffa900ff', '#ffa900ff', '#ffaa00ff', '#ffab00ff', '#ffab00ff', '#ffac00ff', '#ffac00ff', '#ffad00ff', '#ffad00ff', '#ffae00ff', '#ffae00ff', '#ffaf00ff', '#ffaf00ff', '#ffb000ff', '#ffb100ff', '#ffb100ff', '#ffb200ff', '#ffb200ff', '#ffb300ff', '#ffb300ff', '#ffb400ff', '#ffb400ff', '#ffb500ff', '#ffb500ff', '#ffb600ff', '#ffb700ff', '#ffb700ff', '#ffb800ff', '#ffb800ff', '#ffb900ff', '#ffb900ff', '#ffba00ff', '#ffba00ff', '#ffbb00ff', '#ffbb00ff', '#ffbc00ff', '#ffbd00ff', '#ffbd00ff', '#ffbe00ff', '#ffbe00ff', '#ffbf00ff', '#ffbf00ff', '#ffc000ff', '#ffc000ff', '#ffc100ff', '#ffc100ff', '#ffc200ff', '#ffc200ff', '#ffc300ff', '#ffc400ff', '#ffc400ff', '#ffc500ff', '#ffc500ff', '#ffc600ff', '#ffc600ff', '#ffc700ff', '#ffc700ff', '#ffc800ff', '#ffc800ff', '#ffc900ff', '#ffca00ff', '#ffca00ff', '#ffcb00ff', '#ffcb00ff', '#ffcc00ff', '#ffcc00ff', '#ffcd00ff', '#ffcd00ff', '#ffce00ff', '#ffce00ff', '#ffcf00ff', '#ffd000ff', '#ffd000ff', '#ffd100ff', '#ffd100ff', '#ffd200ff', '#ffd200ff', '#ffd300ff', '#ffd300ff', '#ffd400ff', '#ffd400ff', '#ffd500ff', '#ffd500ff', '#ffd600ff', '#ffd700ff', '#ffd700ff', '#ffd800ff', '#ffd800ff', '#ffd900ff', '#ffd900ff', '#ffda00ff', '#ffda00ff', '#ffdb00ff', '#ffdb00ff', '#ffdc00ff', '#ffdd00ff', '#ffdd00ff', '#ffde00ff', '#ffde00ff', '#ffdf00ff', '#ffdf00ff', '#ffe000ff', '#ffe000ff', '#ffe100ff', '#ffe100ff', '#ffe200ff', '#ffe300ff', '#ffe300ff', '#ffe400ff', '#ffe400ff', '#ffe500ff', '#ffe500ff', '#ffe600ff', '#ffe600ff', '#ffe700ff', '#ffe700ff', '#ffe800ff', '#ffe900ff', '#ffe900ff', '#ffea00ff', '#ffea00ff', '#ffeb00ff', '#ffeb00ff', '#ffec00ff', '#ffec00ff', '#ffed00ff', '#ffed00ff', '#ffee00ff', '#ffee00ff', '#ffef00ff', '#fff000ff', '#fff000ff', '#fff100ff', '#fff100ff', '#fff200ff', '#fff200ff', '#fff300ff', '#fff300ff', '#fff400ff', '#fff400ff', '#fff500ff', '#fff600ff', '#fff600ff', '#fff700ff', '#fff700ff', '#fff800ff', '#fff800ff', '#fff900ff', '#fff900ff', '#fffa00ff', '#fffa00ff', '#fffb00ff', '#fffc00ff', '#fffc00ff', '#fffd00ff', '#fffd00ff', '#fffe00ff', '#fffe00ff', '#ffff00ff', '#ffff00ff', '#ffff00ff', '#feff01ff', '#feff02ff', '#fdff03ff', '#fcff04ff', '#fcff04ff', '#fbff05ff', '#faff06ff', '#faff07ff', '#f9ff08ff', '#f8fe09ff', '#f8fe0aff', '#f7fe0bff', '#f6fe0bff', '#f6fe0cff', '#f5fe0dff', '#f4fe0eff', '#f4fe0fff', '#f3fe10ff', '#f2fd11ff', '#f2fd11ff', '#f1fd12ff', '#f0fd13ff', '#f0fd14ff', '#effd15ff', '#eefd16ff', '#eefd17ff', '#edfd18ff', '#ecfd18ff', '#ecfc19ff', '#ebfc1aff', '#eafc1bff', '#eafc1cff', '#e9fc1dff', '#e8fc1eff', '#e8fc1eff', '#e7fc1fff', '#e6fc20ff', '#e6fc21ff', '#e5fb22ff', '#e4fb23ff', '#e4fb24ff', '#e3fb25ff', '#e2fb25ff', '#e2fb26ff', '#e1fb27ff', '#e0fb28ff', '#e0fb29ff', '#dffb2aff', '#defa2bff', '#defa2cff', '#ddfa2cff', '#dcfa2dff', '#dcfa2eff', '#dbfa2fff', '#dafa30ff', '#dafa31ff', '#d9fa32ff', '#d8f932ff', '#d8f933ff', '#d7f934ff', '#d6f935ff', '#d6f936ff', '#d5f937ff', '#d4f938ff', '#d4f939ff', '#d3f939ff', '#d2f93aff', '#d1f83bff', '#d1f83cff', '#d0f83dff', '#cff83eff', '#cff83fff', '#cef840ff', '#cdf840ff', '#cdf841ff', '#ccf842ff', '#cbf843ff', '#cbf744ff', '#caf745ff', '#c9f746ff', '#c9f746ff', '#c8f747ff', '#c7f748ff', '#c7f749ff', '#c6f74aff', '#c5f74bff', '#c5f74cff', '#c4f64dff', '#c3f64dff', '#c3f64eff', '#c2f64fff', '#c1f650ff', '#c1f651ff', '#c0f652ff', '#bff653ff', '#bff654ff', '#bef554ff', '#bdf555ff', '#bdf556ff', '#bcf557ff', '#bbf558ff', '#bbf559ff', '#baf55aff', '#b9f55aff', '#b9f55bff', '#b8f55cff', '#b7f45dff', '#b7f45eff', '#b6f45fff', '#b5f460ff', '#b5f461ff', '#b4f461ff', '#b3f462ff', '#b3f463ff', '#b2f464ff', '#b1f465ff', '#b1f366ff', '#b0f367ff', '#aff368ff', '#aff368ff', '#aef369ff', '#adf36aff', '#adf36bff', '#acf36cff', '#abf36dff', '#abf36eff', '#aaf26eff', '#a9f26fff', '#a9f270ff', '#a8f271ff', '#a7f272ff', '#a7f273ff', '#a6f274ff', '#a5f275ff', '#a5f275ff', '#a4f176ff', '#a3f177ff', '#a3f178ff', '#a2f179ff', '#a1f17aff', '#a1f17bff', '#a0f17bff', '#9ff17cff', '#9ff17dff', '#9ef17eff', '#9df07fff', '#9df080ff', '#9cf081ff', '#9bf082ff', '#9bf082ff', '#9af083ff', '#99f084ff', '#99f085ff', '#98f086ff', '#97f087ff', '#97ef88ff', '#96ef89ff', '#95ef89ff', '#95ef8aff', '#94ef8bff', '#93ef8cff', '#93ef8dff', '#92ef8eff', '#91ef8fff', '#91ef8fff', '#90ee90ff', '#8fee8fff', '#8eed8eff', '#8dec8dff', '#8cec8cff', '#8beb8bff', '#8bea8bff', '#8aea8aff', '#89e989ff', '#88e888ff', '#87e887ff', '#86e786ff', '#85e685ff', '#84e684ff', '#84e584ff', '#83e483ff', '#82e482ff', '#81e381ff', '#80e280ff', '#7fe27fff', '#7ee17eff', '#7ee07eff', '#7de07dff', '#7cdf7cff', '#7bde7bff', '#7ade7aff', '#79dd79ff', '#78dc78ff', '#77dc77ff', '#77db77ff', '#76da76ff', '#75da75ff', '#74d974ff', '#73d873ff', '#72d872ff', '#71d771ff', '#70d670ff', '#70d670ff', '#6fd56fff', '#6ed46eff', '#6dd46dff', '#6cd36cff', '#6bd26bff', '#6ad26aff', '#6ad16aff', '#69d069ff', '#68d068ff', '#67cf67ff', '#66ce66ff', '#65ce65ff', '#64cd64ff', '#63cc63ff', '#63cc63ff', '#62cb62ff', '#61ca61ff', '#60ca60ff', '#5fc95fff', '#5ec85eff', '#5dc85dff', '#5cc75cff', '#5cc65cff', '#5bc65bff', '#5ac55aff', '#59c459ff', '#58c458ff', '#57c357ff', '#56c256ff', '#56c256ff', '#55c155ff', '#54c054ff', '#53c053ff', '#52bf52ff', '#51be51ff', '#50be50ff', '#4fbd4fff', '#4fbc4fff', '#4ebc4eff', '#4dbb4dff', '#4cba4cff', '#4bba4bff', '#4ab94aff', '#49b849ff', '#49b849ff', '#48b748ff', '#47b647ff', '#46b646ff', '#45b545ff', '#44b444ff', '#43b443ff', '#42b342ff', '#42b242ff', '#41b241ff', '#40b140ff', '#3fb03fff', '#3eb03eff', '#3daf3dff', '#3cae3cff', '#3bae3bff', '#3bad3bff', '#3aac3aff', '#39ac39ff', '#38ab38ff', '#37aa37ff', '#36aa36ff', '#35a935ff', '#35a935ff', '#34a834ff', '#33a733ff', '#32a732ff', '#31a631ff', '#30a530ff', '#2fa52fff', '#2ea42eff', '#2ea32eff', '#2da32dff', '#2ca22cff', '#2ba12bff', '#2aa12aff', '#29a029ff', '#289f28ff', '#279f27ff', '#279e27ff', '#269d26ff', '#259d25ff', '#249c24ff', '#239b23ff', '#229b22ff', '#219a21ff', '#219921ff', '#209920ff', '#1f981fff', '#1e971eff', '#1d971dff', '#1c961cff', '#1b951bff', '#1a951aff', '#1a941aff', '#199319ff', '#189318ff', '#179217ff', '#169116ff', '#159115ff', '#149014ff', '#138f13ff', '#138f13ff', '#128e12ff', '#118d11ff', '#108d10ff', '#0f8c0fff', '#0e8b0eff', '#0d8b0dff', '#0d8a0dff', '#0c890cff', '#0b890bff', '#0a880aff', '#098709ff', '#088708ff', '#078607ff', '#068506ff', '#068506ff', '#058405ff', '#048304ff', '#038303ff', '#028202ff', '#018101ff', '#008100ff', '#008000ff']);
+    
+
+    color_map_dd7b9767fa6abf02701fd02541417bc4.x = d3.scale.linear()
+              .domain([0.2511627118644068, 0.29634831460674155])
+              .range([0, 450 - 50]);
+
+    color_map_dd7b9767fa6abf02701fd02541417bc4.legend = L.control({position: 'topright'});
+    color_map_dd7b9767fa6abf02701fd02541417bc4.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_dd7b9767fa6abf02701fd02541417bc4.legend.addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+
+    color_map_dd7b9767fa6abf02701fd02541417bc4.xAxis = d3.svg.axis()
+        .scale(color_map_dd7b9767fa6abf02701fd02541417bc4.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.2511627118644068, 0.26622457944518507, 0.2812864470259633, 0.29634831460674155]);
+
+    color_map_dd7b9767fa6abf02701fd02541417bc4.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_dd7b9767fa6abf02701fd02541417bc4.g = color_map_dd7b9767fa6abf02701fd02541417bc4.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_dd7b9767fa6abf02701fd02541417bc4.g.selectAll("rect")
+        .data(color_map_dd7b9767fa6abf02701fd02541417bc4.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_dd7b9767fa6abf02701fd02541417bc4.x(color_map_dd7b9767fa6abf02701fd02541417bc4.color.domain()[i - 1]) : color_map_dd7b9767fa6abf02701fd02541417bc4.x.range()[0],
+            x1: i < color_map_dd7b9767fa6abf02701fd02541417bc4.color.domain().length ? color_map_dd7b9767fa6abf02701fd02541417bc4.x(color_map_dd7b9767fa6abf02701fd02541417bc4.color.domain()[i]) : color_map_dd7b9767fa6abf02701fd02541417bc4.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_dd7b9767fa6abf02701fd02541417bc4.g.call(color_map_dd7b9767fa6abf02701fd02541417bc4.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Average 3-Point Accuracy (3P%)");
+    
+            tile_layer_1daff32989c1f5b2ecc0d93d09f3a41a.addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+            tile_layer_1daff32989c1f5b2ecc0d93d09f3a41a.addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+    
+            tile_layer_1daff32989c1f5b2ecc0d93d09f3a41a.addTo(map_8bb9cad74367afb5a0e543f2bf18792c);
+        
+</script>
+</html>

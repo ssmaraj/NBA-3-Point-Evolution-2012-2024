@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1c9ff8842c7a92828c38ebe5b4be282b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1c9ff8842c7a92828c38ebe5b4be282b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1c9ff8842c7a92828c38ebe5b4be282b = L.map(
+                "map_1c9ff8842c7a92828c38ebe5b4be282b",
+                {
+                    center: [39.8283, -98.5795],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ca4be626f7981f23fa6374481ed18514 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ca4be626f7981f23fa6374481ed18514.addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+            var circle_marker_af506f85f613cd212fddb0c0e21e2ea6 = L.circleMarker(
+                [43.6435, -79.3791],
+                {"bubblingMouseEvents": true, "color": "#90ee90ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#90ee90ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.968707482993198, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_68267c9dd4613de231caa68d29efd0aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b32acdecf2c298391d1e016538204f05 = $(`<div id="html_b32acdecf2c298391d1e016538204f05" style="width: 100.0%; height: 100.0%;"><b>Toronto Raptors</b><br>Ontario, Canada<br>Avg 3PA: 99.7<br>Avg 3P%: 28.13%</div>`)[0];
+                popup_68267c9dd4613de231caa68d29efd0aa.setContent(html_b32acdecf2c298391d1e016538204f05);
+            
+        
+
+        circle_marker_af506f85f613cd212fddb0c0e21e2ea6.bindPopup(popup_68267c9dd4613de231caa68d29efd0aa)
+        ;
+
+        
+    
+    
+            var circle_marker_05d094a93aaf83fe084ca989ccc49fee = L.circleMarker(
+                [33.4458, -112.0712],
+                {"bubblingMouseEvents": true, "color": "#d3f939ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3f939ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.056521739130435, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_253e71bacb13efc0fc6da45e1793cfd8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6092ff86c629310c62487c38950bf082 = $(`<div id="html_6092ff86c629310c62487c38950bf082" style="width: 100.0%; height: 100.0%;"><b>Phoenix Suns</b><br>Arizona, United States of America<br>Avg 3PA: 110.6<br>Avg 3P%: 27.22%</div>`)[0];
+                popup_253e71bacb13efc0fc6da45e1793cfd8.setContent(html_6092ff86c629310c62487c38950bf082);
+            
+        
+
+        circle_marker_05d094a93aaf83fe084ca989ccc49fee.bindPopup(popup_253e71bacb13efc0fc6da45e1793cfd8)
+        ;
+
+        
+    
+    
+            var circle_marker_4e36cd633d727937f7c27b1afb411f4f = L.circleMarker(
+                [37.768, -122.3877],
+                {"bubblingMouseEvents": true, "color": "#fffa00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffa00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.26818181818182, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_ef4089d57a95057da85fc5e5ca9b7d7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9bd64b89d49a1e744fa8fe82d3acd51a = $(`<div id="html_9bd64b89d49a1e744fa8fe82d3acd51a" style="width: 100.0%; height: 100.0%;"><b>Golden State Warriors</b><br>California, United States of America<br>Avg 3PA: 112.7<br>Avg 3P%: 26.53%</div>`)[0];
+                popup_ef4089d57a95057da85fc5e5ca9b7d7e.setContent(html_9bd64b89d49a1e744fa8fe82d3acd51a);
+            
+        
+
+        circle_marker_4e36cd633d727937f7c27b1afb411f4f.bindPopup(popup_ef4089d57a95057da85fc5e5ca9b7d7e)
+        ;
+
+        
+    
+    
+            var circle_marker_050e7ce70b37586ce23f91ead86b9ca3 = L.circleMarker(
+                [34.043, -118.2673],
+                {"bubblingMouseEvents": true, "color": "#97ef87ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#97ef87ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.413826366559485, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_22382829ccfa79e7b5adb3490adac3ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09090a961fc64520f6f436fe30a4daf7 = $(`<div id="html_09090a961fc64520f6f436fe30a4daf7" style="width: 100.0%; height: 100.0%;"><b>LA Clippers</b><br>California, United States of America<br>Avg 3PA: 94.1<br>Avg 3P%: 28.04%</div>`)[0];
+                popup_22382829ccfa79e7b5adb3490adac3ae.setContent(html_09090a961fc64520f6f436fe30a4daf7);
+            
+        
+
+        circle_marker_050e7ce70b37586ce23f91ead86b9ca3.bindPopup(popup_22382829ccfa79e7b5adb3490adac3ae)
+        ;
+
+        
+    
+    
+            var circle_marker_dfcf4063f2b0ce3669df258b0fffa426 = L.circleMarker(
+                [34.043, -118.2673],
+                {"bubblingMouseEvents": true, "color": "#ffdf00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdf00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.650602409638555, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_d9008bcd774d6f62173e7c6ece395d60 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9394ed3e4278daf38de084ff3bf9f3b2 = $(`<div id="html_9394ed3e4278daf38de084ff3bf9f3b2" style="width: 100.0%; height: 100.0%;"><b>Los Angeles Lakers</b><br>California, United States of America<br>Avg 3PA: 106.5<br>Avg 3P%: 26.07%</div>`)[0];
+                popup_d9008bcd774d6f62173e7c6ece395d60.setContent(html_9394ed3e4278daf38de084ff3bf9f3b2);
+            
+        
+
+        circle_marker_dfcf4063f2b0ce3669df258b0fffa426.bindPopup(popup_d9008bcd774d6f62173e7c6ece395d60)
+        ;
+
+        
+    
+    
+            var circle_marker_383208bee30785534531d64bf056aa2f = L.circleMarker(
+                [38.5802, -121.4998],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.484574468085107, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_30c9a3138b34abe020979b5fa72e6db7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e58e06b8db01145820a5024a27e2adb4 = $(`<div id="html_e58e06b8db01145820a5024a27e2adb4" style="width: 100.0%; height: 100.0%;"><b>Sacramento Kings</b><br>California, United States of America<br>Avg 3PA: 124.8<br>Avg 3P%: 26.62%</div>`)[0];
+                popup_30c9a3138b34abe020979b5fa72e6db7.setContent(html_e58e06b8db01145820a5024a27e2adb4);
+            
+        
+
+        circle_marker_383208bee30785534531d64bf056aa2f.bindPopup(popup_30c9a3138b34abe020979b5fa72e6db7)
+        ;
+
+        
+    
+    
+            var circle_marker_b8c5585a87018bb0e3d28c05c72492d1 = L.circleMarker(
+                [39.7487, -105.0077],
+                {"bubblingMouseEvents": true, "color": "#008000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.232958801498127, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_07f2e5077728e0cfbabd96cbbc85d2ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b41feb8f7f6bf6d2fec03d4c8f1b83a = $(`<div id="html_1b41feb8f7f6bf6d2fec03d4c8f1b83a" style="width: 100.0%; height: 100.0%;"><b>Denver Nuggets</b><br>Colorado, United States of America<br>Avg 3PA: 102.3<br>Avg 3P%: 29.63%</div>`)[0];
+                popup_07f2e5077728e0cfbabd96cbbc85d2ed.setContent(html_1b41feb8f7f6bf6d2fec03d4c8f1b83a);
+            
+        
+
+        circle_marker_b8c5585a87018bb0e3d28c05c72492d1.bindPopup(popup_07f2e5077728e0cfbabd96cbbc85d2ed)
+        ;
+
+        
+    
+    
+            var circle_marker_95f37199482cf5ab758f6463e9a38fe1 = L.circleMarker(
+                [38.8981, -77.0209],
+                {"bubblingMouseEvents": true, "color": "#ffa600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffa600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.208015267175572, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_e3b580b45fe833f4e1e77cb4dbb85764 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ed6f5e5260baa92f375a95a05f258c0 = $(`<div id="html_5ed6f5e5260baa92f375a95a05f258c0" style="width: 100.0%; height: 100.0%;"><b>Washington Wizards</b><br>District of Columbia, United States of America<br>Avg 3PA: 92.1<br>Avg 3P%: 25.13%</div>`)[0];
+                popup_e3b580b45fe833f4e1e77cb4dbb85764.setContent(html_5ed6f5e5260baa92f375a95a05f258c0);
+            
+        
+
+        circle_marker_95f37199482cf5ab758f6463e9a38fe1.bindPopup(popup_e3b580b45fe833f4e1e77cb4dbb85764)
+        ;
+
+        
+    
+    
+            var circle_marker_be16da3052079a7aba0af598711fca2f = L.circleMarker(
+                [25.7814, -80.187],
+                {"bubblingMouseEvents": true, "color": "#8dec8dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8dec8dff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.786597938144329, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_5638d1f7dc44c89552e73565953256e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2467e54336a7309ba57975b7b645b761 = $(`<div id="html_2467e54336a7309ba57975b7b645b761" style="width: 100.0%; height: 100.0%;"><b>Miami Heat</b><br>Florida, United States of America<br>Avg 3PA: 97.9<br>Avg 3P%: 28.16%</div>`)[0];
+                popup_5638d1f7dc44c89552e73565953256e7.setContent(html_2467e54336a7309ba57975b7b645b761);
+            
+        
+
+        circle_marker_be16da3052079a7aba0af598711fca2f.bindPopup(popup_5638d1f7dc44c89552e73565953256e7)
+        ;
+
+        
+    
+    
+            var circle_marker_315c432b177beeb06fe4554d079c8a9c = L.circleMarker(
+                [28.5392, -81.3839],
+                {"bubblingMouseEvents": true, "color": "#0f8c0fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0f8c0fff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.335526315789474, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_b0c0ed21c278c565b359e1f44efe493f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3764fd807bf7ec9399366d6e45521531 = $(`<div id="html_3764fd807bf7ec9399366d6e45521531" style="width: 100.0%; height: 100.0%;"><b>Orlando Magic</b><br>Florida, United States of America<br>Avg 3PA: 103.4<br>Avg 3P%: 29.47%</div>`)[0];
+                popup_b0c0ed21c278c565b359e1f44efe493f.setContent(html_3764fd807bf7ec9399366d6e45521531);
+            
+        
+
+        circle_marker_315c432b177beeb06fe4554d079c8a9c.bindPopup(popup_b0c0ed21c278c565b359e1f44efe493f)
+        ;
+
+        
+    
+    
+            var circle_marker_b19324c9b73635e1b2afcb340a60c2c9 = L.circleMarker(
+                [33.7573, -84.3963],
+                {"bubblingMouseEvents": true, "color": "#abf36dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#abf36dff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.941052631578946, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_3a00f92ee89c6ffc8dd010c7558dbac1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c78c9559bd61c51b5fc42b0dc7b37c6 = $(`<div id="html_3c78c9559bd61c51b5fc42b0dc7b37c6" style="width: 100.0%; height: 100.0%;"><b>Atlanta Hawks</b><br>Georgia, United States of America<br>Avg 3PA: 99.4<br>Avg 3P%: 27.77%</div>`)[0];
+                popup_3a00f92ee89c6ffc8dd010c7558dbac1.setContent(html_3c78c9559bd61c51b5fc42b0dc7b37c6);
+            
+        
+
+        circle_marker_b19324c9b73635e1b2afcb340a60c2c9.bindPopup(popup_3a00f92ee89c6ffc8dd010c7558dbac1)
+        ;
+
+        
+    
+    
+            var circle_marker_16f7bee2ea069b1aa8dfdfe697aae2a8 = L.circleMarker(
+                [41.8807, -87.6742],
+                {"bubblingMouseEvents": true, "color": "#ffd400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.464372469635627, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_3eb74b992f7778c6ae775d6206774fec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2a38216cf4b5818609b8a0ad64d116f = $(`<div id="html_e2a38216cf4b5818609b8a0ad64d116f" style="width: 100.0%; height: 100.0%;"><b>Chicago Bulls</b><br>Illinois, United States of America<br>Avg 3PA: 94.6<br>Avg 3P%: 25.90%</div>`)[0];
+                popup_3eb74b992f7778c6ae775d6206774fec.setContent(html_e2a38216cf4b5818609b8a0ad64d116f);
+            
+        
+
+        circle_marker_16f7bee2ea069b1aa8dfdfe697aae2a8.bindPopup(popup_3eb74b992f7778c6ae775d6206774fec)
+        ;
+
+        
+    
+    
+            var circle_marker_35a50990b74cd080f1ac5e58bf21ac96 = L.circleMarker(
+                [39.7639, -86.1555],
+                {"bubblingMouseEvents": true, "color": "#ffdd00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdd00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.883333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_f82c6a8e12c979a591811dc3ed8297b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7541700e122a84b9e1e60d158bae17d = $(`<div id="html_c7541700e122a84b9e1e60d158bae17d" style="width: 100.0%; height: 100.0%;"><b>Indiana Pacers</b><br>Indiana, United States of America<br>Avg 3PA: 88.8<br>Avg 3P%: 26.05%</div>`)[0];
+                popup_f82c6a8e12c979a591811dc3ed8297b2.setContent(html_c7541700e122a84b9e1e60d158bae17d);
+            
+        
+
+        circle_marker_35a50990b74cd080f1ac5e58bf21ac96.bindPopup(popup_f82c6a8e12c979a591811dc3ed8297b2)
+        ;
+
+        
+    
+    
+            var circle_marker_56dc104176d5e7fe29e70f1b8a3ed745 = L.circleMarker(
+                [29.949, -90.0821],
+                {"bubblingMouseEvents": true, "color": "#faff06ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#faff06ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.830044843049327, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_8cc27be8517a8081d9af1e6501db50cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_290222f16a8fcdd4919d704c3bd239a9 = $(`<div id="html_290222f16a8fcdd4919d704c3bd239a9" style="width: 100.0%; height: 100.0%;"><b>New Orleans Pelicans</b><br>Louisiana, United States of America<br>Avg 3PA: 98.3<br>Avg 3P%: 26.69%</div>`)[0];
+                popup_8cc27be8517a8081d9af1e6501db50cb.setContent(html_290222f16a8fcdd4919d704c3bd239a9);
+            
+        
+
+        circle_marker_56dc104176d5e7fe29e70f1b8a3ed745.bindPopup(popup_8cc27be8517a8081d9af1e6501db50cb)
+        ;
+
+        
+    
+    
+            var circle_marker_2f8bc8d9d6fa9f6427f7c667a2408751 = L.circleMarker(
+                [42.3663, -71.0621],
+                {"bubblingMouseEvents": true, "color": "#97ef87ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#97ef87ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.534756097560976, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_6068998e3035bd0b571bcbc7bd188db9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0178386b4b31a58ed67f03e22b235431 = $(`<div id="html_0178386b4b31a58ed67f03e22b235431" style="width: 100.0%; height: 100.0%;"><b>Boston Celtics</b><br>Massachusetts, United States of America<br>Avg 3PA: 95.3<br>Avg 3P%: 28.04%</div>`)[0];
+                popup_6068998e3035bd0b571bcbc7bd188db9.setContent(html_0178386b4b31a58ed67f03e22b235431);
+            
+        
+
+        circle_marker_2f8bc8d9d6fa9f6427f7c667a2408751.bindPopup(popup_6068998e3035bd0b571bcbc7bd188db9)
+        ;
+
+        
+    
+    
+            var circle_marker_d06925f1268fccb11b4318ceb43eff63 = L.circleMarker(
+                [42.6978, -83.2407],
+                {"bubblingMouseEvents": true, "color": "#bef554ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bef554ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.909767441860465, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_2073bba0650e15bd8015488323928b02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb993c7d87153e46d1d45855bcc2570f = $(`<div id="html_cb993c7d87153e46d1d45855bcc2570f" style="width: 100.0%; height: 100.0%;"><b>Detroit Pistons</b><br>Michigan, United States of America<br>Avg 3PA: 109.1<br>Avg 3P%: 27.51%</div>`)[0];
+                popup_2073bba0650e15bd8015488323928b02.setContent(html_cb993c7d87153e46d1d45855bcc2570f);
+            
+        
+
+        circle_marker_d06925f1268fccb11b4318ceb43eff63.bindPopup(popup_2073bba0650e15bd8015488323928b02)
+        ;
+
+        
+    
+    
+            var circle_marker_46dfba621248f537f641853275c5d96d = L.circleMarker(
+                [44.9795, -93.276],
+                {"bubblingMouseEvents": true, "color": "#adf36aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#adf36aff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.491928251121077, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_ac4b60e8119848e3270c445359b66201 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a263694dc8d93552b17e42327755de0d = $(`<div id="html_a263694dc8d93552b17e42327755de0d" style="width: 100.0%; height: 100.0%;"><b>Minnesota Timberwolves</b><br>Minnesota, United States of America<br>Avg 3PA: 104.9<br>Avg 3P%: 27.73%</div>`)[0];
+                popup_ac4b60e8119848e3270c445359b66201.setContent(html_a263694dc8d93552b17e42327755de0d);
+            
+        
+
+        circle_marker_46dfba621248f537f641853275c5d96d.bindPopup(popup_ac4b60e8119848e3270c445359b66201)
+        ;
+
+        
+    
+    
+            var circle_marker_fc1ae5fd45f88e2e27d2d15f6ddea8e2 = L.circleMarker(
+                [40.6826, -73.9754],
+                {"bubblingMouseEvents": true, "color": "#f6fe0bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6fe0bff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.43745704467354, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_b23d18c59d473bd6589a50c651b7bc45 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a44732fe80e311d7c1970ca089c1d5da = $(`<div id="html_a44732fe80e311d7c1970ca089c1d5da" style="width: 100.0%; height: 100.0%;"><b>Brooklyn Nets</b><br>New York, United States of America<br>Avg 3PA: 94.4<br>Avg 3P%: 26.75%</div>`)[0];
+                popup_b23d18c59d473bd6589a50c651b7bc45.setContent(html_a44732fe80e311d7c1970ca089c1d5da);
+            
+        
+
+        circle_marker_fc1ae5fd45f88e2e27d2d15f6ddea8e2.bindPopup(popup_b23d18c59d473bd6589a50c651b7bc45)
+        ;
+
+        
+    
+    
+            var circle_marker_8052c5eaf523c3d53545d34bfd8b8e99 = L.circleMarker(
+                [40.7505, -73.9934],
+                {"bubblingMouseEvents": true, "color": "#ffd800ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.706140350877194, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_7708034b68a6e43257fdbe1226add4b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5da0030fb56ba21f32eb91dda42ceb8f = $(`<div id="html_5da0030fb56ba21f32eb91dda42ceb8f" style="width: 100.0%; height: 100.0%;"><b>New York Knicks</b><br>New York, United States of America<br>Avg 3PA: 107.1<br>Avg 3P%: 25.97%</div>`)[0];
+                popup_7708034b68a6e43257fdbe1226add4b4.setContent(html_5da0030fb56ba21f32eb91dda42ceb8f);
+            
+        
+
+        circle_marker_8052c5eaf523c3d53545d34bfd8b8e99.bindPopup(popup_7708034b68a6e43257fdbe1226add4b4)
+        ;
+
+        
+    
+    
+            var circle_marker_7e6b1f7f59bb3b07337fc51a77946a40 = L.circleMarker(
+                [35.2251, -80.8392],
+                {"bubblingMouseEvents": true, "color": "#d0f83dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0f83dff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.12548076923077, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_785d5b31a9da2bac98366bf090564186 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e4029f4cafca24a34c7a794cfa5333d = $(`<div id="html_1e4029f4cafca24a34c7a794cfa5333d" style="width: 100.0%; height: 100.0%;"><b>Charlotte Hornets</b><br>North Carolina, United States of America<br>Avg 3PA: 121.3<br>Avg 3P%: 27.27%</div>`)[0];
+                popup_785d5b31a9da2bac98366bf090564186.setContent(html_1e4029f4cafca24a34c7a794cfa5333d);
+            
+        
+
+        circle_marker_7e6b1f7f59bb3b07337fc51a77946a40.bindPopup(popup_785d5b31a9da2bac98366bf090564186)
+        ;
+
+        
+    
+    
+            var circle_marker_3d8be13188f3042ce6a87b733d992d4f = L.circleMarker(
+                [41.4965, -81.6882],
+                {"bubblingMouseEvents": true, "color": "#f8fe09ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f8fe09ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.531481481481482, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_625469f6e0e222e31192a4e9671cea28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84815034887da333b1e51205c75bafa5 = $(`<div id="html_84815034887da333b1e51205c75bafa5" style="width: 100.0%; height: 100.0%;"><b>Cleveland Cavaliers</b><br>Ohio, United States of America<br>Avg 3PA: 105.3<br>Avg 3P%: 26.72%</div>`)[0];
+                popup_625469f6e0e222e31192a4e9671cea28.setContent(html_84815034887da333b1e51205c75bafa5);
+            
+        
+
+        circle_marker_3d8be13188f3042ce6a87b733d992d4f.bindPopup(popup_625469f6e0e222e31192a4e9671cea28)
+        ;
+
+        
+    
+    
+            var circle_marker_74a28981bd51eba306340933cd073f36 = L.circleMarker(
+                [35.4634, -97.5151],
+                {"bubblingMouseEvents": true, "color": "#ffe600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.498983050847459, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_c94c78df5b70c98525747ae7a8aeae5a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4a9869e7bba78c0955ad8d8fedb7fa7 = $(`<div id="html_d4a9869e7bba78c0955ad8d8fedb7fa7" style="width: 100.0%; height: 100.0%;"><b>Oklahoma City Thunder</b><br>Oklahoma, United States of America<br>Avg 3PA: 95.0<br>Avg 3P%: 26.20%</div>`)[0];
+                popup_c94c78df5b70c98525747ae7a8aeae5a.setContent(html_d4a9869e7bba78c0955ad8d8fedb7fa7);
+            
+        
+
+        circle_marker_74a28981bd51eba306340933cd073f36.bindPopup(popup_c94c78df5b70c98525747ae7a8aeae5a)
+        ;
+
+        
+    
+    
+            var circle_marker_0fb3db2484931b54d115d11f8652d736 = L.circleMarker(
+                [45.5316, -122.6668],
+                {"bubblingMouseEvents": true, "color": "#98f085ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#98f085ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.981314878892734, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_be470e42231cfbd0d51387c67ec642d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e55cf9b0a12f1886fc86f9fd418626c = $(`<div id="html_8e55cf9b0a12f1886fc86f9fd418626c" style="width: 100.0%; height: 100.0%;"><b>Portland Trail Blazers</b><br>Oregon, United States of America<br>Avg 3PA: 99.8<br>Avg 3P%: 28.02%</div>`)[0];
+                popup_be470e42231cfbd0d51387c67ec642d0.setContent(html_8e55cf9b0a12f1886fc86f9fd418626c);
+            
+        
+
+        circle_marker_0fb3db2484931b54d115d11f8652d736.bindPopup(popup_be470e42231cfbd0d51387c67ec642d0)
+        ;
+
+        
+    
+    
+            var circle_marker_2723069bfec323c31cb87d19bd696e23 = L.circleMarker(
+                [39.9012, -75.172],
+                {"bubblingMouseEvents": true, "color": "#f7fe0bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f7fe0bff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.641007194244605, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_8e7474b6f64095c00355cad5ba494975 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d8a873440e983a9188f3eb34f1d3acd = $(`<div id="html_1d8a873440e983a9188f3eb34f1d3acd" style="width: 100.0%; height: 100.0%;"><b>Philadelphia 76ers</b><br>Pennsylvania, United States of America<br>Avg 3PA: 96.4<br>Avg 3P%: 26.74%</div>`)[0];
+                popup_8e7474b6f64095c00355cad5ba494975.setContent(html_1d8a873440e983a9188f3eb34f1d3acd);
+            
+        
+
+        circle_marker_2723069bfec323c31cb87d19bd696e23.bindPopup(popup_8e7474b6f64095c00355cad5ba494975)
+        ;
+
+        
+    
+    
+            var circle_marker_d95ee99aa2d09cebc28f1149ca1b9d50 = L.circleMarker(
+                [35.1383, -90.0505],
+                {"bubblingMouseEvents": true, "color": "#ffa500ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffa500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.65864406779661, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_83c25500b2702f21eea639eb2bb53d0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4dcabbabf647a392ea6f79a5d3699ec3 = $(`<div id="html_4dcabbabf647a392ea6f79a5d3699ec3" style="width: 100.0%; height: 100.0%;"><b>Memphis Grizzlies</b><br>Tennessee, United States of America<br>Avg 3PA: 76.6<br>Avg 3P%: 25.12%</div>`)[0];
+                popup_83c25500b2702f21eea639eb2bb53d0b.setContent(html_4dcabbabf647a392ea6f79a5d3699ec3);
+            
+        
+
+        circle_marker_d95ee99aa2d09cebc28f1149ca1b9d50.bindPopup(popup_83c25500b2702f21eea639eb2bb53d0b)
+        ;
+
+        
+    
+    
+            var circle_marker_1bce7995d9d8e3f3aff851eec76a8009 = L.circleMarker(
+                [32.7905, -96.8104],
+                {"bubblingMouseEvents": true, "color": "#ffeb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.23973063973064, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_04218ac98ea3a3d25b9a31117519b58e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3dc991b99f06766d2178ce7d4bf52d7 = $(`<div id="html_d3dc991b99f06766d2178ce7d4bf52d7" style="width: 100.0%; height: 100.0%;"><b>Dallas Mavericks</b><br>Texas, United States of America<br>Avg 3PA: 102.4<br>Avg 3P%: 26.27%</div>`)[0];
+                popup_04218ac98ea3a3d25b9a31117519b58e.setContent(html_d3dc991b99f06766d2178ce7d4bf52d7);
+            
+        
+
+        circle_marker_1bce7995d9d8e3f3aff851eec76a8009.bindPopup(popup_04218ac98ea3a3d25b9a31117519b58e)
+        ;
+
+        
+    
+    
+            var circle_marker_cfb518d756539defc5c811efe1e94f64 = L.circleMarker(
+                [29.7508, -95.3621],
+                {"bubblingMouseEvents": true, "color": "#ffca00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffca00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.99041095890411, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_13b8df3197f3416bd1071176e6a29bfa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2740d72a1981da9532e6d884baed2a6b = $(`<div id="html_2740d72a1981da9532e6d884baed2a6b" style="width: 100.0%; height: 100.0%;"><b>Houston Rockets</b><br>Texas, United States of America<br>Avg 3PA: 119.9<br>Avg 3P%: 25.73%</div>`)[0];
+                popup_13b8df3197f3416bd1071176e6a29bfa.setContent(html_2740d72a1981da9532e6d884baed2a6b);
+            
+        
+
+        circle_marker_cfb518d756539defc5c811efe1e94f64.bindPopup(popup_13b8df3197f3416bd1071176e6a29bfa)
+        ;
+
+        
+    
+    
+            var circle_marker_ccf659a18cdbb9efeacf6aa6fcb179dc = L.circleMarker(
+                [29.4269, -98.4375],
+                {"bubblingMouseEvents": true, "color": "#41b241ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#41b241ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.513475177304965, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_b9c1436745c93b8070beb7fb26620648 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_269949dbc481532a1bab4e41fc108701 = $(`<div id="html_269949dbc481532a1bab4e41fc108701" style="width: 100.0%; height: 100.0%;"><b>San Antonio Spurs</b><br>Texas, United States of America<br>Avg 3PA: 85.1<br>Avg 3P%: 28.95%</div>`)[0];
+                popup_b9c1436745c93b8070beb7fb26620648.setContent(html_269949dbc481532a1bab4e41fc108701);
+            
+        
+
+        circle_marker_ccf659a18cdbb9efeacf6aa6fcb179dc.bindPopup(popup_b9c1436745c93b8070beb7fb26620648)
+        ;
+
+        
+    
+    
+            var circle_marker_73d62b5876d53765134620ac8667a864 = L.circleMarker(
+                [40.7683, -111.9011],
+                {"bubblingMouseEvents": true, "color": "#ffcb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.950735294117646, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_18f9297888ef99e3799e7c5d03d6cf0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8252b07362e85d2a96680d5d34b60e51 = $(`<div id="html_8252b07362e85d2a96680d5d34b60e51" style="width: 100.0%; height: 100.0%;"><b>Utah Jazz</b><br>Utah, United States of America<br>Avg 3PA: 99.5<br>Avg 3P%: 25.75%</div>`)[0];
+                popup_18f9297888ef99e3799e7c5d03d6cf0f.setContent(html_8252b07362e85d2a96680d5d34b60e51);
+            
+        
+
+        circle_marker_73d62b5876d53765134620ac8667a864.bindPopup(popup_18f9297888ef99e3799e7c5d03d6cf0f)
+        ;
+
+        
+    
+    
+            var circle_marker_92d6503d7c2294b7883aee25f54ecb70 = L.circleMarker(
+                [43.0436, -87.9054],
+                {"bubblingMouseEvents": true, "color": "#aef36aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aef36aff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.880757097791797, "stroke": true, "weight": 3}
+            ).addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+        var popup_b03cf8bb3e27badf2e1e22f42df133bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42e50644eebee7900c8c991d3945694a = $(`<div id="html_42e50644eebee7900c8c991d3945694a" style="width: 100.0%; height: 100.0%;"><b>Milwaukee Bucks</b><br>Wisconsin, United States of America<br>Avg 3PA: 88.8<br>Avg 3P%: 27.73%</div>`)[0];
+                popup_b03cf8bb3e27badf2e1e22f42df133bf.setContent(html_42e50644eebee7900c8c991d3945694a);
+            
+        
+
+        circle_marker_92d6503d7c2294b7883aee25f54ecb70.bindPopup(popup_b03cf8bb3e27badf2e1e22f42df133bf)
+        ;
+
+        
+    
+    
+    var color_map_5d6f375ce7818d5ebe6ef78f6d277da0 = {};
+
+    
+    color_map_5d6f375ce7818d5ebe6ef78f6d277da0.color = d3.scale.threshold()
+              .domain([0.2511627118644068, 0.25125326417451166, 0.25134381648461657, 0.2514343687947214, 0.2515249211048263, 0.2516154734149312, 0.2517060257250361, 0.25179657803514094, 0.25188713034524585, 0.2519776826553507, 0.2520682349654556, 0.25215878727556046, 0.25224933958566537, 0.2523398918957702, 0.2524304442058751, 0.25252099651598, 0.2526115488260849, 0.25270210113618974, 0.25279265344629465, 0.2528832057563995, 0.2529737580665044, 0.25306431037660926, 0.25315486268671417, 0.253245414996819, 0.2533359673069239, 0.2534265196170288, 0.2535170719271337, 0.25360762423723854, 0.25369817654734345, 0.2537887288574483, 0.2538792811675532, 0.25396983347765806, 0.25406038578776297, 0.2541509380978678, 0.2542414904079727, 0.2543320427180776, 0.2544225950281825, 0.25451314733828734, 0.25460369964839225, 0.2546942519584971, 0.25478480426860195, 0.25487535657870686, 0.2549659088888117, 0.2550564611989166, 0.25514701350902147, 0.2552375658191264, 0.25532811812923123, 0.25541867043933614, 0.255509222749441, 0.2555997750595459, 0.25569032736965075, 0.25578087967975566, 0.2558714319898605, 0.2559619842999654, 0.25605253661007027, 0.2561430889201752, 0.25623364123028003, 0.25632419354038494, 0.2564147458504898, 0.2565052981605947, 0.25659585047069955, 0.25668640278080446, 0.2567769550909093, 0.2568675074010142, 0.25695805971111907, 0.257048612021224, 0.25713916433132883, 0.25722971664143374, 0.2573202689515386, 0.2574108212616435, 0.25750137357174835, 0.25759192588185326, 0.2576824781919581, 0.257773030502063, 0.25786358281216787, 0.2579541351222728, 0.25804468743237763, 0.25813523974248254, 0.2582257920525874, 0.25831634436269224, 0.25840689667279715, 0.258497448982902, 0.2585880012930069, 0.25867855360311176, 0.25876910591321667, 0.2588596582233215, 0.25895021053342643, 0.2590407628435313, 0.2591313151536362, 0.25922186746374104, 0.25931241977384595, 0.2594029720839508, 0.2594935243940557, 0.25958407670416056, 0.25967462901426547, 0.2597651813243703, 0.25985573363447523, 0.2599462859445801, 0.260036838254685, 0.26012739056478984, 0.26021794287489475, 0.2603084951849996, 0.2603990474951045, 0.26048959980520936, 0.26058015211531427, 0.2606707044254191, 0.260761256735524, 0.2608518090456289, 0.2609423613557338, 0.26103291366583864, 0.26112346597594355, 0.2612140182860484, 0.2613045705961533, 0.26139512290625816, 0.261485675216363, 0.2615762275264679, 0.2616667798365728, 0.2617573321466777, 0.26184788445678253, 0.26193843676688744, 0.2620289890769923, 0.2621195413870972, 0.26221009369720205, 0.26230064600730696, 0.2623911983174118, 0.2624817506275167, 0.26257230293762157, 0.2626628552477265, 0.26275340755783133, 0.26284395986793624, 0.2629345121780411, 0.263025064488146, 0.26311561679825085, 0.26320616910835576, 0.2632967214184606, 0.2633872737285655, 0.26347782603867037, 0.2635683783487753, 0.26365893065888013, 0.26374948296898504, 0.2638400352790899, 0.2639305875891948, 0.26402113989929965, 0.26411169220940456, 0.2642022445195094, 0.2642927968296143, 0.26438334913971917, 0.2644739014498241, 0.26456445375992893, 0.26465500607003384, 0.2647455583801387, 0.2648361106902436, 0.26492666300034845, 0.2650172153104533, 0.2651077676205582, 0.2651983199306631, 0.26528887224076797, 0.2653794245508728, 0.26546997686097773, 0.2655605291710826, 0.2656510814811875, 0.26574163379129234, 0.26583218610139725, 0.2659227384115021, 0.266013290721607, 0.26610384303171186, 0.26619439534181677, 0.2662849476519216, 0.26637549996202653, 0.2664660522721314, 0.2665566045822363, 0.26664715689234114, 0.26673770920244605, 0.2668282615125509, 0.2669188138226558, 0.26700936613276066, 0.26709991844286557, 0.2671904707529704, 0.26728102306307533, 0.2673715753731802, 0.2674621276832851, 0.26755267999338994, 0.26764323230349485, 0.2677337846135997, 0.2678243369237046, 0.26791488923380946, 0.26800544154391437, 0.2680959938540192, 0.26818654616412413, 0.268277098474229, 0.2683676507843339, 0.26845820309443874, 0.2685487554045436, 0.2686393077146485, 0.26872986002475335, 0.26882041233485826, 0.2689109646449631, 0.269001516955068, 0.2690920692651729, 0.2691826215752778, 0.26927317388538263, 0.26936372619548754, 0.2694542785055924, 0.2695448308156973, 0.26963538312580215, 0.26972593543590706, 0.2698164877460119, 0.2699070400561168, 0.2699975923662217, 0.2700881446763266, 0.27017869698643143, 0.27026924929653634, 0.2703598016066412, 0.2704503539167461, 0.27054090622685095, 0.27063145853695586, 0.2707220108470607, 0.2708125631571656, 0.27090311546727047, 0.2709936677773754, 0.27108422008748023, 0.27117477239758514, 0.27126532470769, 0.2713558770177949, 0.27144642932789975, 0.27153698163800466, 0.2716275339481095, 0.2717180862582144, 0.27180863856831927, 0.2718991908784242, 0.27198974318852903, 0.2720802954986339, 0.2721708478087388, 0.27226140011884364, 0.27235195242894855, 0.2724425047390534, 0.2725330570491583, 0.27262360935926316, 0.27271416166936807, 0.2728047139794729, 0.27289526628957783, 0.2729858185996827, 0.2730763709097876, 0.27316692321989244, 0.27325747552999735, 0.2733480278401022, 0.2734385801502071, 0.27352913246031196, 0.27361968477041687, 0.2737102370805217, 0.27380078939062663, 0.2738913417007315, 0.2739818940108364, 0.27407244632094124, 0.27416299863104615, 0.274253550941151, 0.2743441032512559, 0.27443465556136076, 0.27452520787146567, 0.2746157601815705, 0.27470631249167543, 0.2747968648017803, 0.2748874171118852, 0.27497796942199004, 0.27506852173209495, 0.2751590740421998, 0.27524962635230465, 0.27534017866240956, 0.27543073097251447, 0.2755212832826193, 0.2756118355927242, 0.2757023879028291, 0.27579294021293393, 0.27588349252303884, 0.2759740448331437, 0.2760645971432486, 0.27615514945335345, 0.27624570176345836, 0.2763362540735632, 0.2764268063836681, 0.276517358693773, 0.2766079110038779, 0.27669846331398273, 0.27678901562408764, 0.2768795679341925, 0.2769701202442974, 0.27706067255440225, 0.27715122486450716, 0.277241777174612, 0.2773323294847169, 0.2774228817948218, 0.2775134341049267, 0.27760398641503153, 0.27769453872513644, 0.2777850910352413, 0.2778756433453462, 0.27796619565545105, 0.27805674796555596, 0.2781473002756608, 0.2782378525857657, 0.2783284048958706, 0.2784189572059755, 0.27850950951608033, 0.27860006182618524, 0.2786906141362901, 0.27878116644639495, 0.27887171875649985, 0.27896227106660476, 0.2790528233767096, 0.27914337568681447, 0.2792339279969194, 0.2793244803070242, 0.27941503261712913, 0.279505584927234, 0.2795961372373389, 0.27968668954744375, 0.27977724185754865, 0.2798677941676535, 0.2799583464777584, 0.28004889878786327, 0.2801394510979682, 0.280230003408073, 0.28032055571817793, 0.2804111080282828, 0.2805016603383877, 0.28059221264849254, 0.28068276495859745, 0.2807733172687023, 0.2808638695788072, 0.28095442188891206, 0.281044974199017, 0.2811355265091218, 0.28122607881922673, 0.2813166311293316, 0.2814071834394365, 0.28149773574954134, 0.28158828805964625, 0.2816788403697511, 0.281769392679856, 0.28185994498996086, 0.28195049730006577, 0.2820410496101706, 0.28213160192027553, 0.2822221542303804, 0.28231270654048524, 0.28240325885059014, 0.28249381116069505, 0.2825843634707999, 0.28267491578090476, 0.28276546809100966, 0.28285602040111457, 0.2829465727112194, 0.2830371250213243, 0.2831276773314292, 0.28321822964153404, 0.28330878195163894, 0.2833993342617438, 0.2834898865718487, 0.28358043888195356, 0.28367099119205846, 0.2837615435021633, 0.2838520958122682, 0.2839426481223731, 0.284033200432478, 0.28412375274258284, 0.28421430505268774, 0.2843048573627926, 0.2843954096728975, 0.28448596198300236, 0.28457651429310726, 0.2846670666032121, 0.284757618913317, 0.2848481712234219, 0.2849387235335268, 0.28502927584363164, 0.28511982815373654, 0.2852103804638414, 0.2853009327739463, 0.28539148508405116, 0.28548203739415606, 0.2855725897042609, 0.2856631420143658, 0.2857536943244707, 0.2858442466345755, 0.28593479894468044, 0.28602535125478534, 0.2861159035648902, 0.28620645587499505, 0.28629700818509995, 0.2863875604952048, 0.2864781128053097, 0.28656866511541457, 0.2866592174255195, 0.2867497697356243, 0.28684032204572923, 0.2869308743558341, 0.287021426665939, 0.28711197897604385, 0.28720253128614875, 0.2872930835962536, 0.2873836359063585, 0.28747418821646337, 0.2875647405265683, 0.2876552928366731, 0.28774584514677803, 0.2878363974568829, 0.2879269497669878, 0.28801750207709265, 0.28810805438719755, 0.2881986066973024, 0.2882891590074073, 0.28837971131751217, 0.2884702636276171, 0.2885608159377219, 0.28865136824782683, 0.2887419205579317, 0.2888324728680366, 0.28892302517814145, 0.2890135774882463, 0.2891041297983512, 0.2891946821084561, 0.28928523441856097, 0.2893757867286658, 0.2894663390387707, 0.28955689134887563, 0.2896474436589805, 0.28973799596908534, 0.28982854827919025, 0.28991910058929515, 0.2900096528994, 0.29010020520950486, 0.29019075751960977, 0.2902813098297146, 0.2903718621398195, 0.2904624144499244, 0.2905529667600293, 0.29064351907013414, 0.29073407138023905, 0.2908246236903439, 0.2909151760004488, 0.29100572831055366, 0.29109628062065857, 0.2911868329307634, 0.2912773852408683, 0.2913679375509732, 0.2914584898610781, 0.29154904217118294, 0.29163959448128784, 0.2917301467913927, 0.2918206991014976, 0.29191125141160246, 0.29200180372170736, 0.2920923560318122, 0.2921829083419171, 0.292273460652022, 0.2923640129621269, 0.29245456527223174, 0.29254511758233664, 0.2926356698924415, 0.2927262222025464, 0.29281677451265126, 0.2929073268227561, 0.292997879132861, 0.29308843144296587, 0.2931789837530708, 0.29326953606317563, 0.29336008837328054, 0.2934506406833854, 0.2935411929934903, 0.29363174530359515, 0.29372229761370006, 0.2938128499238049, 0.2939034022339098, 0.29399395454401467, 0.2940845068541196, 0.29417505916422443, 0.29426561147432934, 0.2943561637844342, 0.2944467160945391, 0.29453726840464395, 0.29462782071474886, 0.2947183730248537, 0.2948089253349586, 0.29489947764506347, 0.2949900299551684, 0.29508058226527323, 0.29517113457537814, 0.295261686885483, 0.2953522391955879, 0.29544279150569275, 0.29553334381579766, 0.2956238961259025, 0.2957144484360074, 0.29580500074611227, 0.2958955530562172, 0.295986105366322, 0.2960766576764269, 0.2961672099865318, 0.2962577622966367, 0.29634831460674155])
+              .range(['#ffa500ff', '#ffa600ff', '#ffa600ff', '#ffa700ff', '#ffa700ff', '#ffa800ff', '#ffa800ff', '#ffa900ff', '#ffa900ff', '#ffaa00ff', '#ffab00ff', '#ffab00ff', '#ffac00ff', '#ffac00ff', '#ffad00ff', '#ffad00ff', '#ffae00ff', '#ffae00ff', '#ffaf00ff', '#ffaf00ff', '#ffb000ff', '#ffb100ff', '#ffb100ff', '#ffb200ff', '#ffb200ff', '#ffb300ff', '#ffb300ff', '#ffb400ff', '#ffb400ff', '#ffb500ff', '#ffb500ff', '#ffb600ff', '#ffb700ff', '#ffb700ff', '#ffb800ff', '#ffb800ff', '#ffb900ff', '#ffb900ff', '#ffba00ff', '#ffba00ff', '#ffbb00ff', '#ffbb00ff', '#ffbc00ff', '#ffbd00ff', '#ffbd00ff', '#ffbe00ff', '#ffbe00ff', '#ffbf00ff', '#ffbf00ff', '#ffc000ff', '#ffc000ff', '#ffc100ff', '#ffc100ff', '#ffc200ff', '#ffc200ff', '#ffc300ff', '#ffc400ff', '#ffc400ff', '#ffc500ff', '#ffc500ff', '#ffc600ff', '#ffc600ff', '#ffc700ff', '#ffc700ff', '#ffc800ff', '#ffc800ff', '#ffc900ff', '#ffca00ff', '#ffca00ff', '#ffcb00ff', '#ffcb00ff', '#ffcc00ff', '#ffcc00ff', '#ffcd00ff', '#ffcd00ff', '#ffce00ff', '#ffce00ff', '#ffcf00ff', '#ffd000ff', '#ffd000ff', '#ffd100ff', '#ffd100ff', '#ffd200ff', '#ffd200ff', '#ffd300ff', '#ffd300ff', '#ffd400ff', '#ffd400ff', '#ffd500ff', '#ffd500ff', '#ffd600ff', '#ffd700ff', '#ffd700ff', '#ffd800ff', '#ffd800ff', '#ffd900ff', '#ffd900ff', '#ffda00ff', '#ffda00ff', '#ffdb00ff', '#ffdb00ff', '#ffdc00ff', '#ffdd00ff', '#ffdd00ff', '#ffde00ff', '#ffde00ff', '#ffdf00ff', '#ffdf00ff', '#ffe000ff', '#ffe000ff', '#ffe100ff', '#ffe100ff', '#ffe200ff', '#ffe300ff', '#ffe300ff', '#ffe400ff', '#ffe400ff', '#ffe500ff', '#ffe500ff', '#ffe600ff', '#ffe600ff', '#ffe700ff', '#ffe700ff', '#ffe800ff', '#ffe900ff', '#ffe900ff', '#ffea00ff', '#ffea00ff', '#ffeb00ff', '#ffeb00ff', '#ffec00ff', '#ffec00ff', '#ffed00ff', '#ffed00ff', '#ffee00ff', '#ffee00ff', '#ffef00ff', '#fff000ff', '#fff000ff', '#fff100ff', '#fff100ff', '#fff200ff', '#fff200ff', '#fff300ff', '#fff300ff', '#fff400ff', '#fff400ff', '#fff500ff', '#fff600ff', '#fff600ff', '#fff700ff', '#fff700ff', '#fff800ff', '#fff800ff', '#fff900ff', '#fff900ff', '#fffa00ff', '#fffa00ff', '#fffb00ff', '#fffc00ff', '#fffc00ff', '#fffd00ff', '#fffd00ff', '#fffe00ff', '#fffe00ff', '#ffff00ff', '#ffff00ff', '#ffff00ff', '#feff01ff', '#feff02ff', '#fdff03ff', '#fcff04ff', '#fcff04ff', '#fbff05ff', '#faff06ff', '#faff07ff', '#f9ff08ff', '#f8fe09ff', '#f8fe0aff', '#f7fe0bff', '#f6fe0bff', '#f6fe0cff', '#f5fe0dff', '#f4fe0eff', '#f4fe0fff', '#f3fe10ff', '#f2fd11ff', '#f2fd11ff', '#f1fd12ff', '#f0fd13ff', '#f0fd14ff', '#effd15ff', '#eefd16ff', '#eefd17ff', '#edfd18ff', '#ecfd18ff', '#ecfc19ff', '#ebfc1aff', '#eafc1bff', '#eafc1cff', '#e9fc1dff', '#e8fc1eff', '#e8fc1eff', '#e7fc1fff', '#e6fc20ff', '#e6fc21ff', '#e5fb22ff', '#e4fb23ff', '#e4fb24ff', '#e3fb25ff', '#e2fb25ff', '#e2fb26ff', '#e1fb27ff', '#e0fb28ff', '#e0fb29ff', '#dffb2aff', '#defa2bff', '#defa2cff', '#ddfa2cff', '#dcfa2dff', '#dcfa2eff', '#dbfa2fff', '#dafa30ff', '#dafa31ff', '#d9fa32ff', '#d8f932ff', '#d8f933ff', '#d7f934ff', '#d6f935ff', '#d6f936ff', '#d5f937ff', '#d4f938ff', '#d4f939ff', '#d3f939ff', '#d2f93aff', '#d1f83bff', '#d1f83cff', '#d0f83dff', '#cff83eff', '#cff83fff', '#cef840ff', '#cdf840ff', '#cdf841ff', '#ccf842ff', '#cbf843ff', '#cbf744ff', '#caf745ff', '#c9f746ff', '#c9f746ff', '#c8f747ff', '#c7f748ff', '#c7f749ff', '#c6f74aff', '#c5f74bff', '#c5f74cff', '#c4f64dff', '#c3f64dff', '#c3f64eff', '#c2f64fff', '#c1f650ff', '#c1f651ff', '#c0f652ff', '#bff653ff', '#bff654ff', '#bef554ff', '#bdf555ff', '#bdf556ff', '#bcf557ff', '#bbf558ff', '#bbf559ff', '#baf55aff', '#b9f55aff', '#b9f55bff', '#b8f55cff', '#b7f45dff', '#b7f45eff', '#b6f45fff', '#b5f460ff', '#b5f461ff', '#b4f461ff', '#b3f462ff', '#b3f463ff', '#b2f464ff', '#b1f465ff', '#b1f366ff', '#b0f367ff', '#aff368ff', '#aff368ff', '#aef369ff', '#adf36aff', '#adf36bff', '#acf36cff', '#abf36dff', '#abf36eff', '#aaf26eff', '#a9f26fff', '#a9f270ff', '#a8f271ff', '#a7f272ff', '#a7f273ff', '#a6f274ff', '#a5f275ff', '#a5f275ff', '#a4f176ff', '#a3f177ff', '#a3f178ff', '#a2f179ff', '#a1f17aff', '#a1f17bff', '#a0f17bff', '#9ff17cff', '#9ff17dff', '#9ef17eff', '#9df07fff', '#9df080ff', '#9cf081ff', '#9bf082ff', '#9bf082ff', '#9af083ff', '#99f084ff', '#99f085ff', '#98f086ff', '#97f087ff', '#97ef88ff', '#96ef89ff', '#95ef89ff', '#95ef8aff', '#94ef8bff', '#93ef8cff', '#93ef8dff', '#92ef8eff', '#91ef8fff', '#91ef8fff', '#90ee90ff', '#8fee8fff', '#8eed8eff', '#8dec8dff', '#8cec8cff', '#8beb8bff', '#8bea8bff', '#8aea8aff', '#89e989ff', '#88e888ff', '#87e887ff', '#86e786ff', '#85e685ff', '#84e684ff', '#84e584ff', '#83e483ff', '#82e482ff', '#81e381ff', '#80e280ff', '#7fe27fff', '#7ee17eff', '#7ee07eff', '#7de07dff', '#7cdf7cff', '#7bde7bff', '#7ade7aff', '#79dd79ff', '#78dc78ff', '#77dc77ff', '#77db77ff', '#76da76ff', '#75da75ff', '#74d974ff', '#73d873ff', '#72d872ff', '#71d771ff', '#70d670ff', '#70d670ff', '#6fd56fff', '#6ed46eff', '#6dd46dff', '#6cd36cff', '#6bd26bff', '#6ad26aff', '#6ad16aff', '#69d069ff', '#68d068ff', '#67cf67ff', '#66ce66ff', '#65ce65ff', '#64cd64ff', '#63cc63ff', '#63cc63ff', '#62cb62ff', '#61ca61ff', '#60ca60ff', '#5fc95fff', '#5ec85eff', '#5dc85dff', '#5cc75cff', '#5cc65cff', '#5bc65bff', '#5ac55aff', '#59c459ff', '#58c458ff', '#57c357ff', '#56c256ff', '#56c256ff', '#55c155ff', '#54c054ff', '#53c053ff', '#52bf52ff', '#51be51ff', '#50be50ff', '#4fbd4fff', '#4fbc4fff', '#4ebc4eff', '#4dbb4dff', '#4cba4cff', '#4bba4bff', '#4ab94aff', '#49b849ff', '#49b849ff', '#48b748ff', '#47b647ff', '#46b646ff', '#45b545ff', '#44b444ff', '#43b443ff', '#42b342ff', '#42b242ff', '#41b241ff', '#40b140ff', '#3fb03fff', '#3eb03eff', '#3daf3dff', '#3cae3cff', '#3bae3bff', '#3bad3bff', '#3aac3aff', '#39ac39ff', '#38ab38ff', '#37aa37ff', '#36aa36ff', '#35a935ff', '#35a935ff', '#34a834ff', '#33a733ff', '#32a732ff', '#31a631ff', '#30a530ff', '#2fa52fff', '#2ea42eff', '#2ea32eff', '#2da32dff', '#2ca22cff', '#2ba12bff', '#2aa12aff', '#29a029ff', '#289f28ff', '#279f27ff', '#279e27ff', '#269d26ff', '#259d25ff', '#249c24ff', '#239b23ff', '#229b22ff', '#219a21ff', '#219921ff', '#209920ff', '#1f981fff', '#1e971eff', '#1d971dff', '#1c961cff', '#1b951bff', '#1a951aff', '#1a941aff', '#199319ff', '#189318ff', '#179217ff', '#169116ff', '#159115ff', '#149014ff', '#138f13ff', '#138f13ff', '#128e12ff', '#118d11ff', '#108d10ff', '#0f8c0fff', '#0e8b0eff', '#0d8b0dff', '#0d8a0dff', '#0c890cff', '#0b890bff', '#0a880aff', '#098709ff', '#088708ff', '#078607ff', '#068506ff', '#068506ff', '#058405ff', '#048304ff', '#038303ff', '#028202ff', '#018101ff', '#008100ff', '#008000ff']);
+    
+
+    color_map_5d6f375ce7818d5ebe6ef78f6d277da0.x = d3.scale.linear()
+              .domain([0.2511627118644068, 0.29634831460674155])
+              .range([0, 450 - 50]);
+
+    color_map_5d6f375ce7818d5ebe6ef78f6d277da0.legend = L.control({position: 'topright'});
+    color_map_5d6f375ce7818d5ebe6ef78f6d277da0.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_5d6f375ce7818d5ebe6ef78f6d277da0.legend.addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+
+    color_map_5d6f375ce7818d5ebe6ef78f6d277da0.xAxis = d3.svg.axis()
+        .scale(color_map_5d6f375ce7818d5ebe6ef78f6d277da0.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.2511627118644068, 0.26622457944518507, 0.2812864470259633, 0.29634831460674155]);
+
+    color_map_5d6f375ce7818d5ebe6ef78f6d277da0.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_5d6f375ce7818d5ebe6ef78f6d277da0.g = color_map_5d6f375ce7818d5ebe6ef78f6d277da0.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_5d6f375ce7818d5ebe6ef78f6d277da0.g.selectAll("rect")
+        .data(color_map_5d6f375ce7818d5ebe6ef78f6d277da0.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_5d6f375ce7818d5ebe6ef78f6d277da0.x(color_map_5d6f375ce7818d5ebe6ef78f6d277da0.color.domain()[i - 1]) : color_map_5d6f375ce7818d5ebe6ef78f6d277da0.x.range()[0],
+            x1: i < color_map_5d6f375ce7818d5ebe6ef78f6d277da0.color.domain().length ? color_map_5d6f375ce7818d5ebe6ef78f6d277da0.x(color_map_5d6f375ce7818d5ebe6ef78f6d277da0.color.domain()[i]) : color_map_5d6f375ce7818d5ebe6ef78f6d277da0.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_5d6f375ce7818d5ebe6ef78f6d277da0.g.call(color_map_5d6f375ce7818d5ebe6ef78f6d277da0.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Average 3-Point Accuracy (3P%)");
+    
+            tile_layer_ca4be626f7981f23fa6374481ed18514.addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+            tile_layer_ca4be626f7981f23fa6374481ed18514.addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+    
+            tile_layer_ca4be626f7981f23fa6374481ed18514.addTo(map_1c9ff8842c7a92828c38ebe5b4be282b);
+        
+</script>
+</html>
