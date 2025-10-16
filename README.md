@@ -44,7 +44,7 @@ Geographic Visualization: Created a Tableau map of team 3-point stats by locatio
 Final Storytelling: Combined findings into an interactive Tableau storyboard.
 
 Links
-🎨 Tableau Storyboard: View on Tableau Public
+Tableau Storyboard: View on Tableau Public
 https://public.tableau.com/app/profile/shanta.maraj/viz/NBA3pt_17605668420720/Story1
 
 The Tableau storyboard focuses on key visualizations and insights from the Python analysis to tell a cohesive final story.
